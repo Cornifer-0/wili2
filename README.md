@@ -3,6 +3,7 @@
 A chess engine written from scratch in C++, with a playable terminal interface, magic-bitboard move generation, and an opening book. No external chess libraries or AI-generated code — built entirely from memory during a week without internet access.
 
 <!-- screenshot -->
+<img width="573" height="261" alt="Image" src="https://github.com/user-attachments/assets/4f3bc28d-c881-40a8-a36b-ccde7c997646" />
 
 ## Features
 
@@ -39,6 +40,8 @@ gxf3
 ```
 
 After each of your moves, the engine thinks for a few seconds (default: ~3s) and responds with its move on the board. Only the terminal version is currently available.
+
+<img width="605" height="311" alt="Image" src="https://github.com/user-attachments/assets/00114245-b7a8-4abd-af10-c6c4264c5f55" />
 
 ## Project structure
 
