@@ -1,0 +1,45 @@
+\hypertarget{bitboard_8cc}{}\doxysection{src/bitboard.cc File Reference}
+\label{bitboard_8cc}\index{src/bitboard.cc@{src/bitboard.cc}}
+{\ttfamily \#include \char`\"{}../include/bitboard.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/types.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/defs.\+hh\char`\"{}}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$initializer\+\_\+list$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+Include dependency graph for bitboard.\+cc\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{bitboard_8cc__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceBitboards}{Bitboards}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespaceBitboards_a0f1ba45b66273bf8cf93867c63d8f3f8}{Bitboards\+::rank\+\_\+of}} (\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068}{types\+::\+Square}} sq)
+\item 
+int \mbox{\hyperlink{namespaceBitboards_a6497d783369324af2fae868a7eba1b42}{Bitboards\+::file\+\_\+of}} (\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068}{types\+::\+Square}} sq)
+\item 
+void \mbox{\hyperlink{namespaceBitboards_ae8440a258bac49e8261c6e15dcb953c4}{Bitboards\+::init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the bitboards \+: Files\+Masks, Rank\+Masks, Diagonal\+Masks Anti\+Diagonal\+Masks Knight\+Moves, King\+Moves and Pawn\+Attacks. Called once at the start of the main program. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespaceBitboards_a66283f79dc9fa09d7239a1704d2ca2c2}{Bitboards\+::popcount}} (\mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} b)
+\begin{DoxyCompactList}\small\item\em Returns the number of active bits in the bitboard b. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespaceBitboards_a5ac3f193df0bc5b6acfeb7edb4973018}{Bitboards\+::lsb}} (\mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} b)
+\begin{DoxyCompactList}\small\item\em Returns the position of the least significant active bit in the bitboard b. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespaceBitboards_a9c0dbd5934eb01868f1eeb69575bc397}{Bitboards\+::msb}} (\mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} b)
+\begin{DoxyCompactList}\small\item\em Returns the position of the most siginificant active bit in the bitboard b. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{namespaceBitboards_a0425359eb8c1ceb287fb2b5ef00ebd5a}{Bitboards\+::mask\+\_\+between}} (\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068}{types\+::\+Square}} a, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068}{types\+::\+Square}} b)
+\begin{DoxyCompactList}\small\item\em Returns a mask bitboard from Square a to Square b. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceBitboards_a54a9c2ae39039991ff8db23da4200658}{Bitboards\+::print\+Bitboard}} (\mbox{\hyperlink{namespacetypes_aa25e4c6a12314411bb403adaa99eb3c8}{types\+::\+Bitboard}} bb)
+\begin{DoxyCompactList}\small\item\em Prints a bitboard through the console. With the coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr \mbox{\hyperlink{namespacetypes_aa25e4c6a12314411bb403adaa99eb3c8}{types\+::\+Bitboard}} \mbox{\hyperlink{namespaceBitboards_aef34999f19a27c0d8cd93d7f1f0308e1}{Bitboards\+::\+ONE}} = 1ULL
+\end{DoxyCompactItemize}

@@ -1,0 +1,69 @@
+\hypertarget{bitboard_8hh}{}\doxysection{include/bitboard.hh File Reference}
+\label{bitboard_8hh}\index{include/bitboard.hh@{include/bitboard.hh}}
+{\ttfamily \#include \char`\"{}types.\+hh\char`\"{}}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+Include dependency graph for bitboard.\+hh\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{bitboard_8hh__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{bitboard_8hh__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceBitboards}{Bitboards}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} = uint64\+\_\+t
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespaceBitboards_ae8440a258bac49e8261c6e15dcb953c4}{Bitboards\+::init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the bitboards \+: Files\+Masks, Rank\+Masks, Diagonal\+Masks Anti\+Diagonal\+Masks Knight\+Moves, King\+Moves and Pawn\+Attacks. Called once at the start of the main program. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespaceBitboards_a66283f79dc9fa09d7239a1704d2ca2c2}{Bitboards\+::popcount}} (\mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} b)
+\begin{DoxyCompactList}\small\item\em Returns the number of active bits in the bitboard b. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespaceBitboards_a5ac3f193df0bc5b6acfeb7edb4973018}{Bitboards\+::lsb}} (\mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} b)
+\begin{DoxyCompactList}\small\item\em Returns the position of the least significant active bit in the bitboard b. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespaceBitboards_a9c0dbd5934eb01868f1eeb69575bc397}{Bitboards\+::msb}} (\mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} b)
+\begin{DoxyCompactList}\small\item\em Returns the position of the most siginificant active bit in the bitboard b. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{namespaceBitboards_a0425359eb8c1ceb287fb2b5ef00ebd5a}{Bitboards\+::mask\+\_\+between}} (\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068}{types\+::\+Square}} a, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068}{types\+::\+Square}} b)
+\begin{DoxyCompactList}\small\item\em Returns a mask bitboard from Square a to Square b. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceBitboards_a54a9c2ae39039991ff8db23da4200658}{Bitboards\+::print\+Bitboard}} (\mbox{\hyperlink{namespacetypes_aa25e4c6a12314411bb403adaa99eb3c8}{types\+::\+Bitboard}} bb)
+\begin{DoxyCompactList}\small\item\em Prints a bitboard through the console. With the coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{namespaceBitboards_a4f62e0a5343c64b4eb334cff606f655f}{Bitboards\+::\+File\+Masks}} \mbox{[}8\mbox{]}
+\item 
+\mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{namespaceBitboards_a298a28e527bb2293b891ff3a9612a74b}{Bitboards\+::\+Rank\+Masks}} \mbox{[}8\mbox{]}
+\item 
+\mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{namespaceBitboards_a6c9c35214fce4284f46c6073496086f2}{Bitboards\+::\+Diagonal\+Masks}} \mbox{[}64\mbox{]}
+\item 
+\mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{namespaceBitboards_a73dc5681acd6b56a295073d7140ec015}{Bitboards\+::\+Anti\+Diagonal\+Masks}} \mbox{[}64\mbox{]}
+\item 
+\mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{namespaceBitboards_a2cae37b9881a90f5ec220aee58618037}{Bitboards\+::\+Knight\+Moves}} \mbox{[}64\mbox{]}
+\item 
+\mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{namespaceBitboards_ae97529d82c47edeea44d45d93014b652}{Bitboards\+::\+King\+Moves}} \mbox{[}64\mbox{]}
+\item 
+\mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{namespaceBitboards_ace57ec925405c6cf5feeedfe41973926}{Bitboards\+::\+Pawn\+Attacks}} \mbox{[}2\mbox{]}\mbox{[}64\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}\label{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}} 
+\index{bitboard.hh@{bitboard.hh}!Bitboard@{Bitboard}}
+\index{Bitboard@{Bitboard}!bitboard.hh@{bitboard.hh}}
+\doxysubsubsection{\texorpdfstring{Bitboard}{Bitboard}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} =  uint64\+\_\+t}
+

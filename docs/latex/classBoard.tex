@@ -1,0 +1,301 @@
+\hypertarget{classBoard}{}\doxysection{Board Class Reference}
+\label{classBoard}\index{Board@{Board}}
+
+
+{\ttfamily \#include $<$board.\+hh$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBoard_a9ee491d4fea680cf69b033374a9fdfcb}{Board}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBoard_a4dadab5e2bf07fe51851aefd1fe2887b}{Board}} (std\+::string fen)
+\begin{DoxyCompactList}\small\item\em Initialize board with fen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoard_a99231b0f3b7af9f25dbf5d1049d964be}{load\+Fen}} (std\+::string fen)
+\begin{DoxyCompactList}\small\item\em Loads fen into the board. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoard_af4bf780303dadca3e6b87f5f17170ba5}{render}} () const
+\begin{DoxyCompactList}\small\item\em Renders the board through the channel output. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{structtypes_1_1Move}{types\+::\+Move}} $>$ \mbox{\hyperlink{classBoard_ad000e1f2f169656d09ffca012bac3663}{generate\+Pseudo\+Legal\+Moves}} () const
+\begin{DoxyCompactList}\small\item\em Returns the list of Pseudo-\/\+Legal Moves in the position. Meaning, moves that can be made regarding king safety. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{structtypes_1_1Move}{types\+::\+Move}} $>$ \mbox{\hyperlink{classBoard_a8576725ade5e535ef67dcdd0b152661d}{generate\+Legal\+Moves}} ()
+\begin{DoxyCompactList}\small\item\em Returns the list of Legal Chess Moves that can be made in the current position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoard_a049fbd596bb8835d7ebb9c9b5ed5a962}{make\+Move}} (\mbox{\hyperlink{structtypes_1_1Move}{types\+::\+Move}})
+\begin{DoxyCompactList}\small\item\em Plays the move Move in the current positino. WARNING\+: It doesn\textquotesingle{}t check of the legality of the move, therefore Move should be checked to be legal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoard_ad64ef35c0f386828624f96502180f28b}{undo\+Move}} ()
+\begin{DoxyCompactList}\small\item\em Yields you the board state before the last move was played If there is no register of a last move. It doesn\textquotesingle{}t do annything. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoard_ab60ea30cc5f221a47d29cc6ffd39f2b0}{Zorbist\+Init}} () const
+\begin{DoxyCompactList}\small\item\em It initializes the Zorbist random integers, must be called at the beggening of the execution, so the Transposition Table works. \end{DoxyCompactList}\item 
+uint64\+\_\+t \mbox{\hyperlink{classBoard_ab3770725525fbdc09c055963f59b675e}{compute\+Zobrist\+Hash}} () const
+\begin{DoxyCompactList}\small\item\em Returns the Zorbist\+Hash of the current position. For this Hash to be \char`\"{}unique\char`\"{}, \mbox{\hyperlink{classBoard_ab60ea30cc5f221a47d29cc6ffd39f2b0}{Zorbist\+Init()}} must have been called before. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBoard_a6be0412d7ae743770e2e5193eddb14a9}{is\+King\+Of\+The\+Side\+To\+Move\+Attacked}} () const
+\begin{DoxyCompactList}\small\item\em Returns true if the king of the Side\+To\+Move is attacked. Useful to differentiate between checkmate and stalemate. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBoard_a945984f775fe2c07475929eb2dacbc0b}{is\+Square\+Attacked}} (\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068}{types\+::\+Square}} square, \mbox{\hyperlink{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9}{types\+::\+Color}} by\+Color) const
+\begin{DoxyCompactList}\small\item\em Returns true if and only if the Square square is attacked by the Color by\+Color. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{classBoard_ab1719e97b0f0233bb57524768e6901c0}{get\+Bitboard}} (\mbox{\hyperlink{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7}{types\+::\+Piece\+Type}} p, \mbox{\hyperlink{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9}{types\+::\+Color}} col) const
+\begin{DoxyCompactList}\small\item\em Get the Bitboard object, returns you the bitboard from the \mbox{\hyperlink{classBoard}{Board}} pieces\mbox{[}col\mbox{]}\mbox{[}pt\mbox{]}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9}{types\+::\+Color}} \mbox{\hyperlink{classBoard_a2934806091b4a3bd0a94f9ceec567ca6}{get\+Side\+To\+Move}} () const
+\begin{DoxyCompactList}\small\item\em Get the Side To Move. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{classBoard_a1695466df2692bdab4b9c26192dd37df}{get\+Ocupancy}} (\mbox{\hyperlink{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9}{types\+::\+Color}} col) const
+\begin{DoxyCompactList}\small\item\em Get the colors\mbox{[}col\mbox{]}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{classBoard_aa548c00550a6f086b06310c1e1ef50eb}{get\+Ocupancy}} () const
+\begin{DoxyCompactList}\small\item\em Get the Ocupancy bitboard. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7}{types\+::\+Piece\+Type}} \mbox{\hyperlink{classBoard_a918fc5e50baacd9fc9c1b3fbf2323a05}{get\+Piece\+On}} (\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068}{types\+::\+Square}} to) const
+\begin{DoxyCompactList}\small\item\em Get the Piece On. Returns the Piece\+Type of the piece on the paramater to. If there is no piece on the Square to. It returns NONE. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBoard_a9ee491d4fea680cf69b033374a9fdfcb}\label{classBoard_a9ee491d4fea680cf69b033374a9fdfcb}} 
+\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Board()}{Board()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Board\+::\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+\mbox{\Hypertarget{classBoard_a4dadab5e2bf07fe51851aefd1fe2887b}\label{classBoard_a4dadab5e2bf07fe51851aefd1fe2887b}} 
+\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Board()}{Board()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Board\+::\+Board (\begin{DoxyParamCaption}\item[{std\+::string}]{fen }\end{DoxyParamCaption})}
+
+
+
+Initialize board with fen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fen} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBoard_ab3770725525fbdc09c055963f59b675e}\label{classBoard_ab3770725525fbdc09c055963f59b675e}} 
+\index{Board@{Board}!computeZobristHash@{computeZobristHash}}
+\index{computeZobristHash@{computeZobristHash}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{computeZobristHash()}{computeZobristHash()}}
+{\footnotesize\ttfamily uint64\+\_\+t Board\+::compute\+Zobrist\+Hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the Zorbist\+Hash of the current position. For this Hash to be \char`\"{}unique\char`\"{}, \mbox{\hyperlink{classBoard_ab60ea30cc5f221a47d29cc6ffd39f2b0}{Zorbist\+Init()}} must have been called before. 
+
+\begin{DoxyReturn}{Returns}
+uint64\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBoard_a8576725ade5e535ef67dcdd0b152661d}\label{classBoard_a8576725ade5e535ef67dcdd0b152661d}} 
+\index{Board@{Board}!generateLegalMoves@{generateLegalMoves}}
+\index{generateLegalMoves@{generateLegalMoves}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{generateLegalMoves()}{generateLegalMoves()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{structtypes_1_1Move}{Move}} $>$ Board\+::generate\+Legal\+Moves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the list of Legal Chess Moves that can be made in the current position. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$types\+::\+Move$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBoard_ad000e1f2f169656d09ffca012bac3663}\label{classBoard_ad000e1f2f169656d09ffca012bac3663}} 
+\index{Board@{Board}!generatePseudoLegalMoves@{generatePseudoLegalMoves}}
+\index{generatePseudoLegalMoves@{generatePseudoLegalMoves}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{generatePseudoLegalMoves()}{generatePseudoLegalMoves()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{structtypes_1_1Move}{Move}} $>$ Board\+::generate\+Pseudo\+Legal\+Moves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the list of Pseudo-\/\+Legal Moves in the position. Meaning, moves that can be made regarding king safety. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$types\+::\+Move$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBoard_ab1719e97b0f0233bb57524768e6901c0}\label{classBoard_ab1719e97b0f0233bb57524768e6901c0}} 
+\index{Board@{Board}!getBitboard@{getBitboard}}
+\index{getBitboard@{getBitboard}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getBitboard()}{getBitboard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} Board\+::get\+Bitboard (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7}{types\+::\+Piece\+Type}}}]{p,  }\item[{\mbox{\hyperlink{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9}{types\+::\+Color}}}]{col }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Bitboard object, returns you the bitboard from the \mbox{\hyperlink{classBoard}{Board}} pieces\mbox{[}col\mbox{]}\mbox{[}pt\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & \\
+\hline
+{\em col} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bitboard 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBoard_aa548c00550a6f086b06310c1e1ef50eb}\label{classBoard_aa548c00550a6f086b06310c1e1ef50eb}} 
+\index{Board@{Board}!getOcupancy@{getOcupancy}}
+\index{getOcupancy@{getOcupancy}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getOcupancy()}{getOcupancy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} Board\+::get\+Ocupancy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Ocupancy bitboard. 
+
+\begin{DoxyReturn}{Returns}
+Bitboard 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBoard_a1695466df2692bdab4b9c26192dd37df}\label{classBoard_a1695466df2692bdab4b9c26192dd37df}} 
+\index{Board@{Board}!getOcupancy@{getOcupancy}}
+\index{getOcupancy@{getOcupancy}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getOcupancy()}{getOcupancy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} Board\+::get\+Ocupancy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9}{types\+::\+Color}}}]{col }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the colors\mbox{[}col\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bitboard 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBoard_a918fc5e50baacd9fc9c1b3fbf2323a05}\label{classBoard_a918fc5e50baacd9fc9c1b3fbf2323a05}} 
+\index{Board@{Board}!getPieceOn@{getPieceOn}}
+\index{getPieceOn@{getPieceOn}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getPieceOn()}{getPieceOn()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7}{types\+::\+Piece\+Type}} Board\+::get\+Piece\+On (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068}{types\+::\+Square}}}]{to }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Piece On. Returns the Piece\+Type of the piece on the paramater to. If there is no piece on the Square to. It returns NONE. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7}{types\+::\+Piece\+Type}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBoard_a2934806091b4a3bd0a94f9ceec567ca6}\label{classBoard_a2934806091b4a3bd0a94f9ceec567ca6}} 
+\index{Board@{Board}!getSideToMove@{getSideToMove}}
+\index{getSideToMove@{getSideToMove}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getSideToMove()}{getSideToMove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9}{types\+::\+Color}} Board\+::get\+Side\+To\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Side To Move. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9}{types\+::\+Color}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBoard_a6be0412d7ae743770e2e5193eddb14a9}\label{classBoard_a6be0412d7ae743770e2e5193eddb14a9}} 
+\index{Board@{Board}!isKingOfTheSideToMoveAttacked@{isKingOfTheSideToMoveAttacked}}
+\index{isKingOfTheSideToMoveAttacked@{isKingOfTheSideToMoveAttacked}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{isKingOfTheSideToMoveAttacked()}{isKingOfTheSideToMoveAttacked()}}
+{\footnotesize\ttfamily bool Board\+::is\+King\+Of\+The\+Side\+To\+Move\+Attacked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns true if the king of the Side\+To\+Move is attacked. Useful to differentiate between checkmate and stalemate. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBoard_a945984f775fe2c07475929eb2dacbc0b}\label{classBoard_a945984f775fe2c07475929eb2dacbc0b}} 
+\index{Board@{Board}!isSquareAttacked@{isSquareAttacked}}
+\index{isSquareAttacked@{isSquareAttacked}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{isSquareAttacked()}{isSquareAttacked()}}
+{\footnotesize\ttfamily bool Board\+::is\+Square\+Attacked (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068}{types\+::\+Square}}}]{square,  }\item[{\mbox{\hyperlink{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9}{types\+::\+Color}}}]{by\+Color }\end{DoxyParamCaption}) const}
+
+
+
+Returns true if and only if the Square square is attacked by the Color by\+Color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em square} & \\
+\hline
+{\em by\+Color} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBoard_a99231b0f3b7af9f25dbf5d1049d964be}\label{classBoard_a99231b0f3b7af9f25dbf5d1049d964be}} 
+\index{Board@{Board}!loadFen@{loadFen}}
+\index{loadFen@{loadFen}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{loadFen()}{loadFen()}}
+{\footnotesize\ttfamily void Board\+::load\+Fen (\begin{DoxyParamCaption}\item[{std\+::string}]{fen }\end{DoxyParamCaption})}
+
+
+
+Loads fen into the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fen} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBoard_a049fbd596bb8835d7ebb9c9b5ed5a962}\label{classBoard_a049fbd596bb8835d7ebb9c9b5ed5a962}} 
+\index{Board@{Board}!makeMove@{makeMove}}
+\index{makeMove@{makeMove}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{makeMove()}{makeMove()}}
+{\footnotesize\ttfamily void Board\+::make\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtypes_1_1Move}{types\+::\+Move}}}]{move }\end{DoxyParamCaption})}
+
+
+
+Plays the move Move in the current positino. WARNING\+: It doesn\textquotesingle{}t check of the legality of the move, therefore Move should be checked to be legal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structtypes_1_1Move}{types\+::\+Move}}} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBoard_af4bf780303dadca3e6b87f5f17170ba5}\label{classBoard_af4bf780303dadca3e6b87f5f17170ba5}} 
+\index{Board@{Board}!render@{render}}
+\index{render@{render}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Board\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Renders the board through the channel output. 
+
+\mbox{\Hypertarget{classBoard_ad64ef35c0f386828624f96502180f28b}\label{classBoard_ad64ef35c0f386828624f96502180f28b}} 
+\index{Board@{Board}!undoMove@{undoMove}}
+\index{undoMove@{undoMove}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{undoMove()}{undoMove()}}
+{\footnotesize\ttfamily void Board\+::undo\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Yields you the board state before the last move was played If there is no register of a last move. It doesn\textquotesingle{}t do annything. 
+
+\mbox{\Hypertarget{classBoard_ab60ea30cc5f221a47d29cc6ffd39f2b0}\label{classBoard_ab60ea30cc5f221a47d29cc6ffd39f2b0}} 
+\index{Board@{Board}!ZorbistInit@{ZorbistInit}}
+\index{ZorbistInit@{ZorbistInit}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{ZorbistInit()}{ZorbistInit()}}
+{\footnotesize\ttfamily void Board\+::\+Zorbist\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+It initializes the Zorbist random integers, must be called at the beggening of the execution, so the Transposition Table works. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{board_8hh}{board.\+hh}}\item 
+src/\mbox{\hyperlink{board_8cc}{board.\+cc}}\item 
+src/\mbox{\hyperlink{boardManipulation_8cc}{board\+Manipulation.\+cc}}\item 
+src/\mbox{\hyperlink{movegen_8cc}{movegen.\+cc}}\item 
+src/\mbox{\hyperlink{zobrist_8cc}{zobrist.\+cc}}\end{DoxyCompactItemize}

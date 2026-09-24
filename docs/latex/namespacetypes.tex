@@ -1,0 +1,585 @@
+\hypertarget{namespacetypes}{}\doxysection{types Namespace Reference}
+\label{namespacetypes}\index{types@{types}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structtypes_1_1Move}{Move}}
+\item 
+struct \mbox{\hyperlink{structtypes_1_1MoveState}{Move\+State}}
+\item 
+struct \mbox{\hyperlink{structtypes_1_1searchResult}{search\+Result}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespacetypes_aa25e4c6a12314411bb403adaa99eb3c8}{Bitboard}} = uint64\+\_\+t
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7}{Piece\+Type}} \{ \newline
+\mbox{\hyperlink{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7afc07e86f506114d2390a79150f1553ea}{PAWN}}
+, \mbox{\hyperlink{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7a7feaf92b25734dd78d6af6698cf1cf2f}{KNIGHT}}
+, \mbox{\hyperlink{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7a09abdb7344a90cc896ed817a01c4ad08}{BISHOP}}
+, \mbox{\hyperlink{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7a5147b800fce62dc4ed75dc06b61f812f}{ROOK}}
+, \newline
+\mbox{\hyperlink{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7af670f2524f49b0dcee54ebe55c31f455}{QUEEN}}
+, \mbox{\hyperlink{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7ac306cd53d6ec6e29f8ebab8af4082dfc}{KING}}
+, \mbox{\hyperlink{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7a48fa9ad358040970c267dabbf75646d4}{NONE}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9}{Color}} \{ \mbox{\hyperlink{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9ae95cfb18612b547f1a11c56b456dd002}{WHITE}}
+, \mbox{\hyperlink{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9ad97d76bb14778dff5f1abb98f6445dd5}{BLACK}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068}{Square}} \{ \newline
+\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068ac862a1487503e537220a7a9595efa01c}{A8}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a59cb78f5014f21684a96b5bbc25da0fb}{B8}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a54cad8c9b4cdc86acca31c2ceccc6eef}{C8}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a2f59203e9dd4be3f65da7dd118ddbeda}{D8}}
+, \newline
+\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a7e2378ff3513cc04f75d39ab9b72d782}{E8}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a8c4ebcc1af0fcbf30b00b6fa9bca99d4}{F8}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a0b5144bc734ff59af5556d8eb94f53ce}{G8}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a237c244de462679a5e31c5e93988b2a8}{H8}}
+, \newline
+\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a60b6a60b277e9d9edae6fc2c2c4a0b4b}{A7}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a2a504c86c496363e95a655380a7401ed}{B7}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a8eb769e6b1c3dd1378cae815dd57bc1b}{C7}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a3cc7468265249db1f43a46f084e7304f}{D7}}
+, \newline
+\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a3fbc5a1d287059c94dc7260667057831}{E7}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a88f38c7b003f31e458b3757579f681dc}{F7}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a0fe427a7b792584abbc374dd34ab7008}{G7}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a8783318ffa898e97c48c396ed76e1ec4}{H7}}
+, \newline
+\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a76e6993e87c79190923da2b0a44b63ce}{A6}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a08ed4af0cc93c3f0a303e133d15908b1}{B6}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068afde13c6c6ff339ccedae643638dda73b}{C6}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a5343aed40cbde6e5a3f8cdbfe0018f22}{D6}}
+, \newline
+\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a6d8640a9bf98bb1bc956eecdc38e0f3b}{E6}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a8c38ecfeb03a7b5be1018e2adee19ba5}{F6}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068adb0adc7b9eab39271eb81c8d533b1481}{G6}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068af339ec7b373ad60b886f3482c86ed7e8}{H6}}
+, \newline
+\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a909fd02d8ced20e9a6a81b56e80e0539}{A5}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a2e0edaadeb8cd356a07f262e491927ed}{B5}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a996752f9a9cdc666066fd2bf43716a21}{C5}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a7ddffacefb942a3167f70014f0f269c0}{D5}}
+, \newline
+\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a519d6f8dde5c183bcbaeb61b31d6123e}{E5}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a9ae6bc4408216f5dc075b46c230168c7}{F5}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a2865eb925e0b57377008ea0aa884b78e}{G5}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a5251b9d2580a167b97df906fb10ae36a}{H5}}
+, \newline
+\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a58acaec12b1766784db81ba08326528b}{A4}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a71abd1642cb22fa428c547b5d8799dea}{B4}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068af19ff34da2df47f0932a376a7804f80e}{C4}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068ab58f947148fa0d37eeecd20c66bf4363}{D4}}
+, \newline
+\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a64de0f5125e207ad85fef557ef26bdfc}{E4}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a6c4fb9f4b73b8fba42ab721c07dbe78e}{F4}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a329b572076fe55ecc2b84b420202404c}{G4}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068aaaba112bf0b1bb45b9afe56c8f6cd552}{H4}}
+, \newline
+\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068aaa1bbeb810d0e1573f3561fe903872a8}{A3}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068aa6afccfef1f1dfff4a416fb9d481fc0a}{B3}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a7006eec38e63ba04c729bf9a191f50a3}{C3}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a193716ff653eef8e1e28eb1e7738e7eb}{D3}}
+, \newline
+\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068aeda9f24c28b1ec21bdf1508e28d97632}{E3}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a7cf7f8bb638b5dad7c1c3eff5fbb87ef}{F3}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a3aad343173f180e7d8c9cbf602f9500b}{G3}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068aa9c362c4cfe78af1690b658cdfcd461f}{H3}}
+, \newline
+\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a1fba3bdcc0e1c76ae7b259b980bf7040}{A2}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a05cf984a3133c92776cb54892b7d7d17}{B2}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a5184144d717045116a9d69876dfd028d}{C2}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a474b44e4a91c4d4668028b04422c8306}{D2}}
+, \newline
+\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a8041b7da58a5283d3b2ab4af3a2092a9}{E2}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a05faba9a3fd0ffe8837df1b9e82c05b8}{F2}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a13f82d0e886387dc10d03ad5d0a992d6}{G2}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a5080d6fa3835ffdb7b3cb40021c8b0d5}{H2}}
+, \newline
+\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068af4adee1c3f202ec58eccbbbdf30d3088}{A1}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068ad9adaf07077baab1179949868af6d7bd}{B1}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a1e06b98cf3bd5f220ad0e527a5db4ad8}{C1}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a1eb7558597f55f49a6ae4f25763eca81}{D1}}
+, \newline
+\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a95034242bef97fc5c333dc66c0774085}{E1}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068ae6c1766e2a781daa011c37ed330f4aa8}{F1}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068ac8c3081b706039c846516f46828ec6b4}{G1}}
+, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068a392816aeac3bf3489b387dad91dbd846}{H1}}
+, \newline
+\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068ab4639e1e13cd91e0acdd6160a793cb48}{UNDEFINED}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacetypes_affa50687605a4783f7bf1ad33239791c}{Move\+Flag}} \{ \newline
+\mbox{\hyperlink{namespacetypes_affa50687605a4783f7bf1ad33239791cae61c9831b26f23431dc1da6d9e8295bd}{QUIET}} = 0
+, \mbox{\hyperlink{namespacetypes_affa50687605a4783f7bf1ad33239791caddffa9d2d5a5b0d71c3498d1b5e31d10}{CAPTURE}} = 1
+, \mbox{\hyperlink{namespacetypes_affa50687605a4783f7bf1ad33239791ca9332568bb92728881bfa969b6fba41b8}{PROMOTION}} = 2
+, \mbox{\hyperlink{namespacetypes_affa50687605a4783f7bf1ad33239791ca1f5086c36eacab7898a6e1d582389a8d}{PROMO\+\_\+\+CAPTURE}} = 3
+, \newline
+\mbox{\hyperlink{namespacetypes_affa50687605a4783f7bf1ad33239791ca4bd2a3145a169f0b0765c971c5004396}{EN\+\_\+\+PASSANT}} = 4
+, \mbox{\hyperlink{namespacetypes_affa50687605a4783f7bf1ad33239791ca8afe436201c5a858f224e550e8096312}{CASTLING}} = 5
+, \mbox{\hyperlink{namespacetypes_affa50687605a4783f7bf1ad33239791ca5626c89674dae26ab6753c7916632ed8}{CHECK}} = 6
+ \}
+\item 
+enum \mbox{\hyperlink{namespacetypes_a23774ea38594ca173b18540a1c438e73}{Phase}} \{ \mbox{\hyperlink{namespacetypes_a23774ea38594ca173b18540a1c438e73aa9496135a545fd25ad1e130fd5208848}{MIDGAME}}
+, \mbox{\hyperlink{namespacetypes_a23774ea38594ca173b18540a1c438e73ab6fce68d603d1cbc83b0c0c87787fea0}{ENDGAME}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9}{Color}} \mbox{\hyperlink{namespacetypes_a33fe996997ad31799dea3b751fcbeaa5}{operator!}} (\mbox{\hyperlink{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9}{Color}} c)
+\begin{DoxyCompactList}\small\item\em Returns the opposite color of c. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespacetypes_adbdf3f6f5be744df9f8689a57717d09e}{square\+To\+String}} (\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068}{Square}} square)
+\begin{DoxyCompactList}\small\item\em Returns the string in Standard Chess notation of the Square square. 0 = A8, 2 = B8 ... \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespacetypes_a554861ac53dcd1efe3c4f5eb1fb1e2b1}{piece\+Icon}} (\mbox{\hyperlink{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7}{Piece\+Type}} piece, \mbox{\hyperlink{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9}{Color}} color)
+\begin{DoxyCompactList}\small\item\em Returns the Icon in UNICODE for the Piece\+Type in the color of color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespacetypes_aa25e4c6a12314411bb403adaa99eb3c8}\label{namespacetypes_aa25e4c6a12314411bb403adaa99eb3c8}} 
+\index{types@{types}!Bitboard@{Bitboard}}
+\index{Bitboard@{Bitboard}!types@{types}}
+\doxysubsubsection{\texorpdfstring{Bitboard}{Bitboard}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespacetypes_aa25e4c6a12314411bb403adaa99eb3c8}{types\+::\+Bitboard}} = typedef uint64\+\_\+t}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9}\label{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9}} 
+\index{types@{types}!Color@{Color}}
+\index{Color@{Color}!types@{types}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9}{types\+::\+Color}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WHITE@{WHITE}!types@{types}}\index{types@{types}!WHITE@{WHITE}}}\mbox{\Hypertarget{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9ae95cfb18612b547f1a11c56b456dd002}\label{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9ae95cfb18612b547f1a11c56b456dd002}} 
+WHITE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLACK@{BLACK}!types@{types}}\index{types@{types}!BLACK@{BLACK}}}\mbox{\Hypertarget{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9ad97d76bb14778dff5f1abb98f6445dd5}\label{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9ad97d76bb14778dff5f1abb98f6445dd5}} 
+BLACK&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespacetypes_affa50687605a4783f7bf1ad33239791c}\label{namespacetypes_affa50687605a4783f7bf1ad33239791c}} 
+\index{types@{types}!MoveFlag@{MoveFlag}}
+\index{MoveFlag@{MoveFlag}!types@{types}}
+\doxysubsubsection{\texorpdfstring{MoveFlag}{MoveFlag}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacetypes_affa50687605a4783f7bf1ad33239791c}{types\+::\+Move\+Flag}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{QUIET@{QUIET}!types@{types}}\index{types@{types}!QUIET@{QUIET}}}\mbox{\Hypertarget{namespacetypes_affa50687605a4783f7bf1ad33239791cae61c9831b26f23431dc1da6d9e8295bd}\label{namespacetypes_affa50687605a4783f7bf1ad33239791cae61c9831b26f23431dc1da6d9e8295bd}} 
+QUIET&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAPTURE@{CAPTURE}!types@{types}}\index{types@{types}!CAPTURE@{CAPTURE}}}\mbox{\Hypertarget{namespacetypes_affa50687605a4783f7bf1ad33239791caddffa9d2d5a5b0d71c3498d1b5e31d10}\label{namespacetypes_affa50687605a4783f7bf1ad33239791caddffa9d2d5a5b0d71c3498d1b5e31d10}} 
+CAPTURE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PROMOTION@{PROMOTION}!types@{types}}\index{types@{types}!PROMOTION@{PROMOTION}}}\mbox{\Hypertarget{namespacetypes_affa50687605a4783f7bf1ad33239791ca9332568bb92728881bfa969b6fba41b8}\label{namespacetypes_affa50687605a4783f7bf1ad33239791ca9332568bb92728881bfa969b6fba41b8}} 
+PROMOTION&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PROMO\_CAPTURE@{PROMO\_CAPTURE}!types@{types}}\index{types@{types}!PROMO\_CAPTURE@{PROMO\_CAPTURE}}}\mbox{\Hypertarget{namespacetypes_affa50687605a4783f7bf1ad33239791ca1f5086c36eacab7898a6e1d582389a8d}\label{namespacetypes_affa50687605a4783f7bf1ad33239791ca1f5086c36eacab7898a6e1d582389a8d}} 
+PROMO\+\_\+\+CAPTURE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_PASSANT@{EN\_PASSANT}!types@{types}}\index{types@{types}!EN\_PASSANT@{EN\_PASSANT}}}\mbox{\Hypertarget{namespacetypes_affa50687605a4783f7bf1ad33239791ca4bd2a3145a169f0b0765c971c5004396}\label{namespacetypes_affa50687605a4783f7bf1ad33239791ca4bd2a3145a169f0b0765c971c5004396}} 
+EN\+\_\+\+PASSANT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CASTLING@{CASTLING}!types@{types}}\index{types@{types}!CASTLING@{CASTLING}}}\mbox{\Hypertarget{namespacetypes_affa50687605a4783f7bf1ad33239791ca8afe436201c5a858f224e550e8096312}\label{namespacetypes_affa50687605a4783f7bf1ad33239791ca8afe436201c5a858f224e550e8096312}} 
+CASTLING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CHECK@{CHECK}!types@{types}}\index{types@{types}!CHECK@{CHECK}}}\mbox{\Hypertarget{namespacetypes_affa50687605a4783f7bf1ad33239791ca5626c89674dae26ab6753c7916632ed8}\label{namespacetypes_affa50687605a4783f7bf1ad33239791ca5626c89674dae26ab6753c7916632ed8}} 
+CHECK&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespacetypes_a23774ea38594ca173b18540a1c438e73}\label{namespacetypes_a23774ea38594ca173b18540a1c438e73}} 
+\index{types@{types}!Phase@{Phase}}
+\index{Phase@{Phase}!types@{types}}
+\doxysubsubsection{\texorpdfstring{Phase}{Phase}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacetypes_a23774ea38594ca173b18540a1c438e73}{types\+::\+Phase}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MIDGAME@{MIDGAME}!types@{types}}\index{types@{types}!MIDGAME@{MIDGAME}}}\mbox{\Hypertarget{namespacetypes_a23774ea38594ca173b18540a1c438e73aa9496135a545fd25ad1e130fd5208848}\label{namespacetypes_a23774ea38594ca173b18540a1c438e73aa9496135a545fd25ad1e130fd5208848}} 
+MIDGAME&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENDGAME@{ENDGAME}!types@{types}}\index{types@{types}!ENDGAME@{ENDGAME}}}\mbox{\Hypertarget{namespacetypes_a23774ea38594ca173b18540a1c438e73ab6fce68d603d1cbc83b0c0c87787fea0}\label{namespacetypes_a23774ea38594ca173b18540a1c438e73ab6fce68d603d1cbc83b0c0c87787fea0}} 
+ENDGAME&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7}\label{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7}} 
+\index{types@{types}!PieceType@{PieceType}}
+\index{PieceType@{PieceType}!types@{types}}
+\doxysubsubsection{\texorpdfstring{PieceType}{PieceType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7}{types\+::\+Piece\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAWN@{PAWN}!types@{types}}\index{types@{types}!PAWN@{PAWN}}}\mbox{\Hypertarget{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7afc07e86f506114d2390a79150f1553ea}\label{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7afc07e86f506114d2390a79150f1553ea}} 
+PAWN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KNIGHT@{KNIGHT}!types@{types}}\index{types@{types}!KNIGHT@{KNIGHT}}}\mbox{\Hypertarget{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7a7feaf92b25734dd78d6af6698cf1cf2f}\label{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7a7feaf92b25734dd78d6af6698cf1cf2f}} 
+KNIGHT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BISHOP@{BISHOP}!types@{types}}\index{types@{types}!BISHOP@{BISHOP}}}\mbox{\Hypertarget{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7a09abdb7344a90cc896ed817a01c4ad08}\label{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7a09abdb7344a90cc896ed817a01c4ad08}} 
+BISHOP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ROOK@{ROOK}!types@{types}}\index{types@{types}!ROOK@{ROOK}}}\mbox{\Hypertarget{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7a5147b800fce62dc4ed75dc06b61f812f}\label{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7a5147b800fce62dc4ed75dc06b61f812f}} 
+ROOK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{QUEEN@{QUEEN}!types@{types}}\index{types@{types}!QUEEN@{QUEEN}}}\mbox{\Hypertarget{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7af670f2524f49b0dcee54ebe55c31f455}\label{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7af670f2524f49b0dcee54ebe55c31f455}} 
+QUEEN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KING@{KING}!types@{types}}\index{types@{types}!KING@{KING}}}\mbox{\Hypertarget{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7ac306cd53d6ec6e29f8ebab8af4082dfc}\label{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7ac306cd53d6ec6e29f8ebab8af4082dfc}} 
+KING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NONE@{NONE}!types@{types}}\index{types@{types}!NONE@{NONE}}}\mbox{\Hypertarget{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7a48fa9ad358040970c267dabbf75646d4}\label{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7a48fa9ad358040970c267dabbf75646d4}} 
+NONE&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068}} 
+\index{types@{types}!Square@{Square}}
+\index{Square@{Square}!types@{types}}
+\doxysubsubsection{\texorpdfstring{Square}{Square}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068}{types\+::\+Square}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A8@{A8}!types@{types}}\index{types@{types}!A8@{A8}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068ac862a1487503e537220a7a9595efa01c}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068ac862a1487503e537220a7a9595efa01c}} 
+A8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B8@{B8}!types@{types}}\index{types@{types}!B8@{B8}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a59cb78f5014f21684a96b5bbc25da0fb}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a59cb78f5014f21684a96b5bbc25da0fb}} 
+B8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C8@{C8}!types@{types}}\index{types@{types}!C8@{C8}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a54cad8c9b4cdc86acca31c2ceccc6eef}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a54cad8c9b4cdc86acca31c2ceccc6eef}} 
+C8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D8@{D8}!types@{types}}\index{types@{types}!D8@{D8}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a2f59203e9dd4be3f65da7dd118ddbeda}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a2f59203e9dd4be3f65da7dd118ddbeda}} 
+D8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E8@{E8}!types@{types}}\index{types@{types}!E8@{E8}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a7e2378ff3513cc04f75d39ab9b72d782}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a7e2378ff3513cc04f75d39ab9b72d782}} 
+E8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F8@{F8}!types@{types}}\index{types@{types}!F8@{F8}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a8c4ebcc1af0fcbf30b00b6fa9bca99d4}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a8c4ebcc1af0fcbf30b00b6fa9bca99d4}} 
+F8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G8@{G8}!types@{types}}\index{types@{types}!G8@{G8}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a0b5144bc734ff59af5556d8eb94f53ce}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a0b5144bc734ff59af5556d8eb94f53ce}} 
+G8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{H8@{H8}!types@{types}}\index{types@{types}!H8@{H8}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a237c244de462679a5e31c5e93988b2a8}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a237c244de462679a5e31c5e93988b2a8}} 
+H8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A7@{A7}!types@{types}}\index{types@{types}!A7@{A7}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a60b6a60b277e9d9edae6fc2c2c4a0b4b}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a60b6a60b277e9d9edae6fc2c2c4a0b4b}} 
+A7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B7@{B7}!types@{types}}\index{types@{types}!B7@{B7}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a2a504c86c496363e95a655380a7401ed}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a2a504c86c496363e95a655380a7401ed}} 
+B7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C7@{C7}!types@{types}}\index{types@{types}!C7@{C7}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a8eb769e6b1c3dd1378cae815dd57bc1b}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a8eb769e6b1c3dd1378cae815dd57bc1b}} 
+C7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D7@{D7}!types@{types}}\index{types@{types}!D7@{D7}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a3cc7468265249db1f43a46f084e7304f}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a3cc7468265249db1f43a46f084e7304f}} 
+D7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E7@{E7}!types@{types}}\index{types@{types}!E7@{E7}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a3fbc5a1d287059c94dc7260667057831}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a3fbc5a1d287059c94dc7260667057831}} 
+E7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F7@{F7}!types@{types}}\index{types@{types}!F7@{F7}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a88f38c7b003f31e458b3757579f681dc}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a88f38c7b003f31e458b3757579f681dc}} 
+F7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G7@{G7}!types@{types}}\index{types@{types}!G7@{G7}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a0fe427a7b792584abbc374dd34ab7008}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a0fe427a7b792584abbc374dd34ab7008}} 
+G7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{H7@{H7}!types@{types}}\index{types@{types}!H7@{H7}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a8783318ffa898e97c48c396ed76e1ec4}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a8783318ffa898e97c48c396ed76e1ec4}} 
+H7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A6@{A6}!types@{types}}\index{types@{types}!A6@{A6}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a76e6993e87c79190923da2b0a44b63ce}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a76e6993e87c79190923da2b0a44b63ce}} 
+A6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B6@{B6}!types@{types}}\index{types@{types}!B6@{B6}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a08ed4af0cc93c3f0a303e133d15908b1}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a08ed4af0cc93c3f0a303e133d15908b1}} 
+B6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C6@{C6}!types@{types}}\index{types@{types}!C6@{C6}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068afde13c6c6ff339ccedae643638dda73b}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068afde13c6c6ff339ccedae643638dda73b}} 
+C6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D6@{D6}!types@{types}}\index{types@{types}!D6@{D6}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a5343aed40cbde6e5a3f8cdbfe0018f22}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a5343aed40cbde6e5a3f8cdbfe0018f22}} 
+D6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E6@{E6}!types@{types}}\index{types@{types}!E6@{E6}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a6d8640a9bf98bb1bc956eecdc38e0f3b}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a6d8640a9bf98bb1bc956eecdc38e0f3b}} 
+E6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F6@{F6}!types@{types}}\index{types@{types}!F6@{F6}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a8c38ecfeb03a7b5be1018e2adee19ba5}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a8c38ecfeb03a7b5be1018e2adee19ba5}} 
+F6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G6@{G6}!types@{types}}\index{types@{types}!G6@{G6}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068adb0adc7b9eab39271eb81c8d533b1481}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068adb0adc7b9eab39271eb81c8d533b1481}} 
+G6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{H6@{H6}!types@{types}}\index{types@{types}!H6@{H6}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068af339ec7b373ad60b886f3482c86ed7e8}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068af339ec7b373ad60b886f3482c86ed7e8}} 
+H6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A5@{A5}!types@{types}}\index{types@{types}!A5@{A5}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a909fd02d8ced20e9a6a81b56e80e0539}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a909fd02d8ced20e9a6a81b56e80e0539}} 
+A5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B5@{B5}!types@{types}}\index{types@{types}!B5@{B5}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a2e0edaadeb8cd356a07f262e491927ed}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a2e0edaadeb8cd356a07f262e491927ed}} 
+B5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C5@{C5}!types@{types}}\index{types@{types}!C5@{C5}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a996752f9a9cdc666066fd2bf43716a21}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a996752f9a9cdc666066fd2bf43716a21}} 
+C5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D5@{D5}!types@{types}}\index{types@{types}!D5@{D5}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a7ddffacefb942a3167f70014f0f269c0}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a7ddffacefb942a3167f70014f0f269c0}} 
+D5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E5@{E5}!types@{types}}\index{types@{types}!E5@{E5}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a519d6f8dde5c183bcbaeb61b31d6123e}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a519d6f8dde5c183bcbaeb61b31d6123e}} 
+E5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F5@{F5}!types@{types}}\index{types@{types}!F5@{F5}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a9ae6bc4408216f5dc075b46c230168c7}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a9ae6bc4408216f5dc075b46c230168c7}} 
+F5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G5@{G5}!types@{types}}\index{types@{types}!G5@{G5}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a2865eb925e0b57377008ea0aa884b78e}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a2865eb925e0b57377008ea0aa884b78e}} 
+G5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{H5@{H5}!types@{types}}\index{types@{types}!H5@{H5}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a5251b9d2580a167b97df906fb10ae36a}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a5251b9d2580a167b97df906fb10ae36a}} 
+H5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A4@{A4}!types@{types}}\index{types@{types}!A4@{A4}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a58acaec12b1766784db81ba08326528b}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a58acaec12b1766784db81ba08326528b}} 
+A4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B4@{B4}!types@{types}}\index{types@{types}!B4@{B4}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a71abd1642cb22fa428c547b5d8799dea}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a71abd1642cb22fa428c547b5d8799dea}} 
+B4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C4@{C4}!types@{types}}\index{types@{types}!C4@{C4}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068af19ff34da2df47f0932a376a7804f80e}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068af19ff34da2df47f0932a376a7804f80e}} 
+C4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D4@{D4}!types@{types}}\index{types@{types}!D4@{D4}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068ab58f947148fa0d37eeecd20c66bf4363}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068ab58f947148fa0d37eeecd20c66bf4363}} 
+D4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E4@{E4}!types@{types}}\index{types@{types}!E4@{E4}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a64de0f5125e207ad85fef557ef26bdfc}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a64de0f5125e207ad85fef557ef26bdfc}} 
+E4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F4@{F4}!types@{types}}\index{types@{types}!F4@{F4}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a6c4fb9f4b73b8fba42ab721c07dbe78e}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a6c4fb9f4b73b8fba42ab721c07dbe78e}} 
+F4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G4@{G4}!types@{types}}\index{types@{types}!G4@{G4}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a329b572076fe55ecc2b84b420202404c}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a329b572076fe55ecc2b84b420202404c}} 
+G4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{H4@{H4}!types@{types}}\index{types@{types}!H4@{H4}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068aaaba112bf0b1bb45b9afe56c8f6cd552}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068aaaba112bf0b1bb45b9afe56c8f6cd552}} 
+H4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A3@{A3}!types@{types}}\index{types@{types}!A3@{A3}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068aaa1bbeb810d0e1573f3561fe903872a8}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068aaa1bbeb810d0e1573f3561fe903872a8}} 
+A3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B3@{B3}!types@{types}}\index{types@{types}!B3@{B3}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068aa6afccfef1f1dfff4a416fb9d481fc0a}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068aa6afccfef1f1dfff4a416fb9d481fc0a}} 
+B3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C3@{C3}!types@{types}}\index{types@{types}!C3@{C3}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a7006eec38e63ba04c729bf9a191f50a3}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a7006eec38e63ba04c729bf9a191f50a3}} 
+C3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D3@{D3}!types@{types}}\index{types@{types}!D3@{D3}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a193716ff653eef8e1e28eb1e7738e7eb}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a193716ff653eef8e1e28eb1e7738e7eb}} 
+D3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E3@{E3}!types@{types}}\index{types@{types}!E3@{E3}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068aeda9f24c28b1ec21bdf1508e28d97632}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068aeda9f24c28b1ec21bdf1508e28d97632}} 
+E3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F3@{F3}!types@{types}}\index{types@{types}!F3@{F3}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a7cf7f8bb638b5dad7c1c3eff5fbb87ef}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a7cf7f8bb638b5dad7c1c3eff5fbb87ef}} 
+F3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G3@{G3}!types@{types}}\index{types@{types}!G3@{G3}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a3aad343173f180e7d8c9cbf602f9500b}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a3aad343173f180e7d8c9cbf602f9500b}} 
+G3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{H3@{H3}!types@{types}}\index{types@{types}!H3@{H3}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068aa9c362c4cfe78af1690b658cdfcd461f}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068aa9c362c4cfe78af1690b658cdfcd461f}} 
+H3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A2@{A2}!types@{types}}\index{types@{types}!A2@{A2}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a1fba3bdcc0e1c76ae7b259b980bf7040}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a1fba3bdcc0e1c76ae7b259b980bf7040}} 
+A2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B2@{B2}!types@{types}}\index{types@{types}!B2@{B2}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a05cf984a3133c92776cb54892b7d7d17}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a05cf984a3133c92776cb54892b7d7d17}} 
+B2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C2@{C2}!types@{types}}\index{types@{types}!C2@{C2}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a5184144d717045116a9d69876dfd028d}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a5184144d717045116a9d69876dfd028d}} 
+C2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D2@{D2}!types@{types}}\index{types@{types}!D2@{D2}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a474b44e4a91c4d4668028b04422c8306}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a474b44e4a91c4d4668028b04422c8306}} 
+D2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E2@{E2}!types@{types}}\index{types@{types}!E2@{E2}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a8041b7da58a5283d3b2ab4af3a2092a9}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a8041b7da58a5283d3b2ab4af3a2092a9}} 
+E2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F2@{F2}!types@{types}}\index{types@{types}!F2@{F2}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a05faba9a3fd0ffe8837df1b9e82c05b8}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a05faba9a3fd0ffe8837df1b9e82c05b8}} 
+F2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G2@{G2}!types@{types}}\index{types@{types}!G2@{G2}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a13f82d0e886387dc10d03ad5d0a992d6}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a13f82d0e886387dc10d03ad5d0a992d6}} 
+G2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{H2@{H2}!types@{types}}\index{types@{types}!H2@{H2}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a5080d6fa3835ffdb7b3cb40021c8b0d5}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a5080d6fa3835ffdb7b3cb40021c8b0d5}} 
+H2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A1@{A1}!types@{types}}\index{types@{types}!A1@{A1}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068af4adee1c3f202ec58eccbbbdf30d3088}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068af4adee1c3f202ec58eccbbbdf30d3088}} 
+A1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B1@{B1}!types@{types}}\index{types@{types}!B1@{B1}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068ad9adaf07077baab1179949868af6d7bd}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068ad9adaf07077baab1179949868af6d7bd}} 
+B1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C1@{C1}!types@{types}}\index{types@{types}!C1@{C1}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a1e06b98cf3bd5f220ad0e527a5db4ad8}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a1e06b98cf3bd5f220ad0e527a5db4ad8}} 
+C1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D1@{D1}!types@{types}}\index{types@{types}!D1@{D1}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a1eb7558597f55f49a6ae4f25763eca81}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a1eb7558597f55f49a6ae4f25763eca81}} 
+D1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E1@{E1}!types@{types}}\index{types@{types}!E1@{E1}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a95034242bef97fc5c333dc66c0774085}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a95034242bef97fc5c333dc66c0774085}} 
+E1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F1@{F1}!types@{types}}\index{types@{types}!F1@{F1}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068ae6c1766e2a781daa011c37ed330f4aa8}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068ae6c1766e2a781daa011c37ed330f4aa8}} 
+F1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G1@{G1}!types@{types}}\index{types@{types}!G1@{G1}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068ac8c3081b706039c846516f46828ec6b4}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068ac8c3081b706039c846516f46828ec6b4}} 
+G1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{H1@{H1}!types@{types}}\index{types@{types}!H1@{H1}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068a392816aeac3bf3489b387dad91dbd846}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068a392816aeac3bf3489b387dad91dbd846}} 
+H1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UNDEFINED@{UNDEFINED}!types@{types}}\index{types@{types}!UNDEFINED@{UNDEFINED}}}\mbox{\Hypertarget{namespacetypes_a4b184875ed78df99c846648cf0c2d068ab4639e1e13cd91e0acdd6160a793cb48}\label{namespacetypes_a4b184875ed78df99c846648cf0c2d068ab4639e1e13cd91e0acdd6160a793cb48}} 
+UNDEFINED&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacetypes_a33fe996997ad31799dea3b751fcbeaa5}\label{namespacetypes_a33fe996997ad31799dea3b751fcbeaa5}} 
+\index{types@{types}!operator"!@{operator"!}}
+\index{operator"!@{operator"!}!types@{types}}
+\doxysubsubsection{\texorpdfstring{operator"!()}{operator!()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9}{Color}} types\+::operator! (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9}{Color}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the opposite color of c. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacetypes_a554861ac53dcd1efe3c4f5eb1fb1e2b1}\label{namespacetypes_a554861ac53dcd1efe3c4f5eb1fb1e2b1}} 
+\index{types@{types}!pieceIcon@{pieceIcon}}
+\index{pieceIcon@{pieceIcon}!types@{types}}
+\doxysubsubsection{\texorpdfstring{pieceIcon()}{pieceIcon()}}
+{\footnotesize\ttfamily std\+::string types\+::piece\+Icon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7}{Piece\+Type}}}]{piece,  }\item[{\mbox{\hyperlink{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9}{Color}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the Icon in UNICODE for the Piece\+Type in the color of color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em piece} & \\
+\hline
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacetypes_adbdf3f6f5be744df9f8689a57717d09e}\label{namespacetypes_adbdf3f6f5be744df9f8689a57717d09e}} 
+\index{types@{types}!squareToString@{squareToString}}
+\index{squareToString@{squareToString}!types@{types}}
+\doxysubsubsection{\texorpdfstring{squareToString()}{squareToString()}}
+{\footnotesize\ttfamily std\+::string types\+::square\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068}{Square}}}]{square }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the string in Standard Chess notation of the Square square. 0 = A8, 2 = B8 ... 
+
+
+\begin{DoxyParams}{Parameters}
+{\em square} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}

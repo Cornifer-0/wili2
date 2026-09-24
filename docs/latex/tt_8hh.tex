@@ -1,0 +1,46 @@
+\hypertarget{tt_8hh}{}\doxysection{include/tt.hh File Reference}
+\label{tt_8hh}\index{include/tt.hh@{include/tt.hh}}
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include \char`\"{}board.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}types.\+hh\char`\"{}}\newline
+Include dependency graph for tt.\+hh\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tt_8hh__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{tt_8hh__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structTT_1_1Entry}{TT\+::\+Entry}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceTT}{TT}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceTT_a42360677653c7ec52a07fd5966e0529c}{TT\+::\+Node\+Type}} \{ \mbox{\hyperlink{namespaceTT_a42360677653c7ec52a07fd5966e0529ca4fbbd030d92af87c30d6ca4ea0884a90}{TT\+::\+EXACT}}
+, \mbox{\hyperlink{namespaceTT_a42360677653c7ec52a07fd5966e0529ca5b5ec1732fb00326ad539d919c7cb3fe}{TT\+::\+LOWERBOUND}}
+, \mbox{\hyperlink{namespaceTT_a42360677653c7ec52a07fd5966e0529ca23f0c4755e8c7be7c76ae4942470e576}{TT\+::\+UPPERBOUND}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespaceTT_aa0618a633cd142102db265737fb2b45a}{TT\+::init}} (size\+\_\+t size\+MB=64)
+\begin{DoxyCompactList}\small\item\em It initializes the space for the Transposition Table, by default 64MB Must be called before using the Transposition Table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceTT_ab59e135e29596d92379fdda003d9de5a}{TT\+::store}} (uint64\+\_\+t key, int depth, int score, \mbox{\hyperlink{structtypes_1_1Move}{types\+::\+Move}} best\+Move, Node\+Type type)
+\begin{DoxyCompactList}\small\item\em This function stores a key (zobrist\+Hash) with it\textquotesingle{}s correspoding depth, score, best\+Move found and type. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceTT_aad93e3b20f702d9bcac5826125065aac}{TT\+::probe}} (uint64\+\_\+t key, int depth, int alpha, int beta, int \&out\+Score)
+\begin{DoxyCompactList}\small\item\em This function checks if there exists an entry to the tranposition table with the key key. Returns true if and only if that is true. If the function returns true, it also set the reference variable out\+Score to be the score found in the entry with the key key. \end{DoxyCompactList}\end{DoxyCompactItemize}

@@ -1,0 +1,8 @@
+<map id="include/magic.hh" name="include/magic.hh">
+<area shape="rect" id="node1" title=" " alt="" coords="230,5,363,32"/>
+<area shape="rect" id="node2" href="$board_8cc.html" title=" " alt="" coords="5,80,105,107"/>
+<area shape="rect" id="node3" href="$eval_8cc.html" title=" " alt="" coords="130,80,221,107"/>
+<area shape="rect" id="node4" href="$magic_8cc.html" title=" " alt="" coords="245,80,348,107"/>
+<area shape="rect" id="node5" href="$main_8cc.html" title=" " alt="" coords="373,80,469,107"/>
+<area shape="rect" id="node6" href="$movegen_8cc.html" title=" " alt="" coords="493,80,617,107"/>
+</map>

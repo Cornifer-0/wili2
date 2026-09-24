@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['c1_39',['C1',['../namespacetypes.html#a4b184875ed78df99c846648cf0c2d068a1e06b98cf3bd5f220ad0e527a5db4ad8',1,'types']]],
+  ['c2_40',['C2',['../namespacetypes.html#a4b184875ed78df99c846648cf0c2d068a5184144d717045116a9d69876dfd028d',1,'types']]],
+  ['c3_41',['C3',['../namespacetypes.html#a4b184875ed78df99c846648cf0c2d068a7006eec38e63ba04c729bf9a191f50a3',1,'types']]],
+  ['c4_42',['C4',['../namespacetypes.html#a4b184875ed78df99c846648cf0c2d068af19ff34da2df47f0932a376a7804f80e',1,'types']]],
+  ['c5_43',['C5',['../namespacetypes.html#a4b184875ed78df99c846648cf0c2d068a996752f9a9cdc666066fd2bf43716a21',1,'types']]],
+  ['c6_44',['C6',['../namespacetypes.html#a4b184875ed78df99c846648cf0c2d068afde13c6c6ff339ccedae643638dda73b',1,'types']]],
+  ['c7_45',['C7',['../namespacetypes.html#a4b184875ed78df99c846648cf0c2d068a8eb769e6b1c3dd1378cae815dd57bc1b',1,'types']]],
+  ['c8_46',['C8',['../namespacetypes.html#a4b184875ed78df99c846648cf0c2d068a54cad8c9b4cdc86acca31c2ceccc6eef',1,'types']]],
+  ['capture_47',['CAPTURE',['../namespacetypes.html#affa50687605a4783f7bf1ad33239791caddffa9d2d5a5b0d71c3498d1b5e31d10',1,'types']]],
+  ['castling_48',['CASTLING',['../namespacetypes.html#affa50687605a4783f7bf1ad33239791ca8afe436201c5a858f224e550e8096312',1,'types']]],
+  ['castlingkeys_49',['castlingKeys',['../zobrist_8cc.html#a451eec3c722d9214d374922c82abd046',1,'castlingKeys():&#160;zobrist.cc'],['../namespaceZobrist.html#a0cff9e3aa148edfd0aad2fb4b32b8745',1,'Zobrist::castlingKeys()']]],
+  ['castlingrights_50',['castlingRights',['../structtypes_1_1MoveState.html#ab48eb12ee079c684277e632bf7abf463',1,'types::MoveState']]],
+  ['castlingrightsenum_51',['CastlingRightsEnum',['../defs_8hh.html#a6b7d5b077cba509494f6b4493dfd36ee',1,'defs.hh']]],
+  ['check_52',['CHECK',['../namespacetypes.html#affa50687605a4783f7bf1ad33239791ca5626c89674dae26ab6753c7916632ed8',1,'types']]],
+  ['color_53',['Color',['../namespacetypes.html#ab4908bd03143b5cf8faf4f9f0bda71a9',1,'types']]],
+  ['computebishopattackforsquare_54',['computeBishopAttackForSquare',['../namespaceMagic.html#a54d571f8fe3cf6e876ae250edf12807b',1,'Magic']]],
+  ['computebishopmask_55',['computeBishopMask',['../namespaceMagic.html#a9fc945dca7b74a54ccf21beae611ab00',1,'Magic']]],
+  ['computegamephase_56',['computeGamePhase',['../namespaceeval.html#a8a040fdb74fe570a4c7514cae63f4446',1,'eval']]],
+  ['computerookattackforsquare_57',['computeRookAttackForSquare',['../namespaceMagic.html#a95b12e722b0eab15800c18afd0c8cba9',1,'Magic']]],
+  ['computerookmask_58',['computeRookMask',['../namespaceMagic.html#aa793fbb72c2a46a0b3a34c8b086e9352',1,'Magic']]],
+  ['computezobristhash_59',['computeZobristHash',['../classBoard.html#ab3770725525fbdc09c055963f59b675e',1,'Board']]]
+];

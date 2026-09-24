@@ -1,0 +1,350 @@
+\hypertarget{namespaceeval}{}\doxysection{eval Namespace Reference}
+\label{namespaceeval}\index{eval@{eval}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespaceeval_a4fa1c94d5f1ae37971db0b91f71a0dbc}{evaluate}} (const \mbox{\hyperlink{classBoard}{Board}} \&board)
+\item 
+int \mbox{\hyperlink{namespaceeval_aaa2f0f061be6273acb360eee23cf8386}{eval\+Material}} (const \mbox{\hyperlink{classBoard}{Board}} \&board, \mbox{\hyperlink{namespacetypes_a23774ea38594ca173b18540a1c438e73}{types\+::\+Phase}} phase)
+\item 
+int \mbox{\hyperlink{namespaceeval_a23998c7a6d8445b03f574c6b4ea4e746}{eval\+Piece\+Square\+Tables}} (const \mbox{\hyperlink{classBoard}{Board}} \&board, \mbox{\hyperlink{namespacetypes_a23774ea38594ca173b18540a1c438e73}{types\+::\+Phase}} phase)
+\item 
+int \mbox{\hyperlink{namespaceeval_a1d7de04406a72f1496d49685b8f9c3d7}{eval\+Mobility}} (const \mbox{\hyperlink{classBoard}{Board}} \&board, \mbox{\hyperlink{namespacetypes_a23774ea38594ca173b18540a1c438e73}{types\+::\+Phase}} phase)
+\item 
+int \mbox{\hyperlink{namespaceeval_a9476fe9095271ddbb555d2c9235fa81b}{eval\+King\+Safety}} (const \mbox{\hyperlink{classBoard}{Board}} \&board)
+\item 
+int \mbox{\hyperlink{namespaceeval_a2b66bb1996b28617c01cecdf8f988e73}{eval\+Pawn\+Structure}} (const \mbox{\hyperlink{classBoard}{Board}} \&board)
+\item 
+int \mbox{\hyperlink{namespaceeval_a1a106f17b8b2fd2d326caef69a2dc2bb}{eval\+Passed\+Pawns}} (const \mbox{\hyperlink{classBoard}{Board}} \&board)
+\item 
+int \mbox{\hyperlink{namespaceeval_a8a040fdb74fe570a4c7514cae63f4446}{compute\+Game\+Phase}} (const \mbox{\hyperlink{classBoard}{Board}} \&board)
+\item 
+int \mbox{\hyperlink{namespaceeval_abac768d939dc9eda3a92f88667a0d38a}{get\+PSTValue}} (\mbox{\hyperlink{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7}{types\+::\+Piece\+Type}} pt, \mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068}{types\+::\+Square}} sq, \mbox{\hyperlink{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9}{types\+::\+Color}} col, \mbox{\hyperlink{namespacetypes_a23774ea38594ca173b18540a1c438e73}{types\+::\+Phase}} phase)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{namespaceeval_aafde74bff8ed53a9f9510438c1f16f4c}{pawn\+\_\+table\+\_\+midgame}} \mbox{[}64\mbox{]}
+\item 
+const int \mbox{\hyperlink{namespaceeval_ab91f58bad8ebb5dd8b74e0a46051b683}{pawn\+\_\+table\+\_\+endgame}} \mbox{[}64\mbox{]}
+\item 
+const int \mbox{\hyperlink{namespaceeval_a4ee445d3d080ce9153aef223b9ff4155}{knight\+\_\+table\+\_\+midgame}} \mbox{[}64\mbox{]}
+\item 
+const int \mbox{\hyperlink{namespaceeval_a6c9b4a99b03243e9a3824048bf6b450e}{knight\+\_\+table\+\_\+endgame}} \mbox{[}64\mbox{]}
+\item 
+const int \mbox{\hyperlink{namespaceeval_af4490b5c26de2049392eed2d748a0e61}{bishop\+\_\+table\+\_\+midgame}} \mbox{[}64\mbox{]}
+\item 
+const int \mbox{\hyperlink{namespaceeval_ae6f882ceb7af3cb45b7d9952822b4d5c}{bishop\+\_\+table\+\_\+endgame}} \mbox{[}64\mbox{]}
+\item 
+const int \mbox{\hyperlink{namespaceeval_aad6a3d95707f3ce2a0c2347e3327b423}{rook\+\_\+table\+\_\+midgame}} \mbox{[}64\mbox{]}
+\item 
+const int \mbox{\hyperlink{namespaceeval_aa0f53a83f9f913702626c26d2ec1e70f}{rook\+\_\+table\+\_\+endgame}} \mbox{[}64\mbox{]}
+\item 
+const int \mbox{\hyperlink{namespaceeval_abe3d2598597a98d21641d2941b9afb0c}{queen\+\_\+table\+\_\+midgame}} \mbox{[}64\mbox{]}
+\item 
+const int \mbox{\hyperlink{namespaceeval_aa17dae23ba63bca8f69cb30385de3a23}{queen\+\_\+table\+\_\+endgame}} \mbox{[}64\mbox{]}
+\item 
+const int \mbox{\hyperlink{namespaceeval_aa7d1ec3d23293b4acbb0bbcc160b0a5b}{king\+\_\+table\+\_\+midgame}} \mbox{[}64\mbox{]}
+\item 
+const int \mbox{\hyperlink{namespaceeval_a7e0e5d756c01173f24e4378e0d0b6ae0}{king\+\_\+table\+\_\+endgame}} \mbox{[}64\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceeval_a8a040fdb74fe570a4c7514cae63f4446}\label{namespaceeval_a8a040fdb74fe570a4c7514cae63f4446}} 
+\index{eval@{eval}!computeGamePhase@{computeGamePhase}}
+\index{computeGamePhase@{computeGamePhase}!eval@{eval}}
+\doxysubsubsection{\texorpdfstring{computeGamePhase()}{computeGamePhase()}}
+{\footnotesize\ttfamily int eval\+::compute\+Game\+Phase (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBoard}{Board}} \&}]{board }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceeval_a9476fe9095271ddbb555d2c9235fa81b}\label{namespaceeval_a9476fe9095271ddbb555d2c9235fa81b}} 
+\index{eval@{eval}!evalKingSafety@{evalKingSafety}}
+\index{evalKingSafety@{evalKingSafety}!eval@{eval}}
+\doxysubsubsection{\texorpdfstring{evalKingSafety()}{evalKingSafety()}}
+{\footnotesize\ttfamily int eval\+::eval\+King\+Safety (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBoard}{Board}} \&}]{board }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceeval_aaa2f0f061be6273acb360eee23cf8386}\label{namespaceeval_aaa2f0f061be6273acb360eee23cf8386}} 
+\index{eval@{eval}!evalMaterial@{evalMaterial}}
+\index{evalMaterial@{evalMaterial}!eval@{eval}}
+\doxysubsubsection{\texorpdfstring{evalMaterial()}{evalMaterial()}}
+{\footnotesize\ttfamily int eval\+::eval\+Material (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBoard}{Board}} \&}]{board,  }\item[{\mbox{\hyperlink{namespacetypes_a23774ea38594ca173b18540a1c438e73}{types\+::\+Phase}}}]{phase }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceeval_a1d7de04406a72f1496d49685b8f9c3d7}\label{namespaceeval_a1d7de04406a72f1496d49685b8f9c3d7}} 
+\index{eval@{eval}!evalMobility@{evalMobility}}
+\index{evalMobility@{evalMobility}!eval@{eval}}
+\doxysubsubsection{\texorpdfstring{evalMobility()}{evalMobility()}}
+{\footnotesize\ttfamily int eval\+::eval\+Mobility (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBoard}{Board}} \&}]{board,  }\item[{\mbox{\hyperlink{namespacetypes_a23774ea38594ca173b18540a1c438e73}{types\+::\+Phase}}}]{phase }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceeval_a1a106f17b8b2fd2d326caef69a2dc2bb}\label{namespaceeval_a1a106f17b8b2fd2d326caef69a2dc2bb}} 
+\index{eval@{eval}!evalPassedPawns@{evalPassedPawns}}
+\index{evalPassedPawns@{evalPassedPawns}!eval@{eval}}
+\doxysubsubsection{\texorpdfstring{evalPassedPawns()}{evalPassedPawns()}}
+{\footnotesize\ttfamily int eval\+::eval\+Passed\+Pawns (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBoard}{Board}} \&}]{board }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceeval_a2b66bb1996b28617c01cecdf8f988e73}\label{namespaceeval_a2b66bb1996b28617c01cecdf8f988e73}} 
+\index{eval@{eval}!evalPawnStructure@{evalPawnStructure}}
+\index{evalPawnStructure@{evalPawnStructure}!eval@{eval}}
+\doxysubsubsection{\texorpdfstring{evalPawnStructure()}{evalPawnStructure()}}
+{\footnotesize\ttfamily int eval\+::eval\+Pawn\+Structure (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBoard}{Board}} \&}]{board }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceeval_a23998c7a6d8445b03f574c6b4ea4e746}\label{namespaceeval_a23998c7a6d8445b03f574c6b4ea4e746}} 
+\index{eval@{eval}!evalPieceSquareTables@{evalPieceSquareTables}}
+\index{evalPieceSquareTables@{evalPieceSquareTables}!eval@{eval}}
+\doxysubsubsection{\texorpdfstring{evalPieceSquareTables()}{evalPieceSquareTables()}}
+{\footnotesize\ttfamily int eval\+::eval\+Piece\+Square\+Tables (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBoard}{Board}} \&}]{board,  }\item[{\mbox{\hyperlink{namespacetypes_a23774ea38594ca173b18540a1c438e73}{types\+::\+Phase}}}]{phase }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceeval_a4fa1c94d5f1ae37971db0b91f71a0dbc}\label{namespaceeval_a4fa1c94d5f1ae37971db0b91f71a0dbc}} 
+\index{eval@{eval}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!eval@{eval}}
+\doxysubsubsection{\texorpdfstring{evaluate()}{evaluate()}}
+{\footnotesize\ttfamily int eval\+::evaluate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBoard}{Board}} \&}]{board }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceeval_abac768d939dc9eda3a92f88667a0d38a}\label{namespaceeval_abac768d939dc9eda3a92f88667a0d38a}} 
+\index{eval@{eval}!getPSTValue@{getPSTValue}}
+\index{getPSTValue@{getPSTValue}!eval@{eval}}
+\doxysubsubsection{\texorpdfstring{getPSTValue()}{getPSTValue()}}
+{\footnotesize\ttfamily int eval\+::get\+PSTValue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacetypes_aefaf4fa4606845ef14c8a47c298bc1f7}{types\+::\+Piece\+Type}}}]{pt,  }\item[{\mbox{\hyperlink{namespacetypes_a4b184875ed78df99c846648cf0c2d068}{types\+::\+Square}}}]{sq,  }\item[{\mbox{\hyperlink{namespacetypes_ab4908bd03143b5cf8faf4f9f0bda71a9}{types\+::\+Color}}}]{col,  }\item[{\mbox{\hyperlink{namespacetypes_a23774ea38594ca173b18540a1c438e73}{types\+::\+Phase}}}]{phase }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceeval_ae6f882ceb7af3cb45b7d9952822b4d5c}\label{namespaceeval_ae6f882ceb7af3cb45b7d9952822b4d5c}} 
+\index{eval@{eval}!bishop\_table\_endgame@{bishop\_table\_endgame}}
+\index{bishop\_table\_endgame@{bishop\_table\_endgame}!eval@{eval}}
+\doxysubsubsection{\texorpdfstring{bishop\_table\_endgame}{bishop\_table\_endgame}}
+{\footnotesize\ttfamily const int eval\+::bishop\+\_\+table\+\_\+endgame\mbox{[}64\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    -\/20, -\/10, -\/10, -\/10, -\/10, -\/10, -\/10, -\/20,}
+\DoxyCodeLine{    -\/10,   0,   0,   0,   0,   0,   0, -\/10,}
+\DoxyCodeLine{    -\/10,   0,   5,  10,  10,   5,   0, -\/10,}
+\DoxyCodeLine{    -\/10,   5,   5,  10,  10,   5,   5, -\/10,}
+\DoxyCodeLine{    -\/10,   0,  10,  10,  10,  10,   0, -\/10,}
+\DoxyCodeLine{    -\/10,  10,  10,  10,  10,  10,  10, -\/10,}
+\DoxyCodeLine{    -\/10,   5,   0,   0,   0,   0,   5, -\/10,}
+\DoxyCodeLine{    -\/20, -\/10, -\/10, -\/10, -\/10, -\/10, -\/10, -\/20}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceeval_af4490b5c26de2049392eed2d748a0e61}\label{namespaceeval_af4490b5c26de2049392eed2d748a0e61}} 
+\index{eval@{eval}!bishop\_table\_midgame@{bishop\_table\_midgame}}
+\index{bishop\_table\_midgame@{bishop\_table\_midgame}!eval@{eval}}
+\doxysubsubsection{\texorpdfstring{bishop\_table\_midgame}{bishop\_table\_midgame}}
+{\footnotesize\ttfamily const int eval\+::bishop\+\_\+table\+\_\+midgame\mbox{[}64\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{  -\/20, -\/10, -\/10, -\/10, -\/10, -\/10, -\/10, -\/20,}
+\DoxyCodeLine{  -\/10,   0,   0,   0,   0,   0,   0, -\/10,}
+\DoxyCodeLine{  -\/10,   0,   5,  10,  10,   5,   0, -\/10,}
+\DoxyCodeLine{  -\/10,   5,   5,  10,  10,   5,   5, -\/10,}
+\DoxyCodeLine{  -\/10,   0,  10,  10,  10,  10,   0, -\/10,}
+\DoxyCodeLine{  -\/10,  10,  10,  10,  10,  10,  10, -\/10,}
+\DoxyCodeLine{  -\/10,   5,   0,   0,   0,   0,   5, -\/10,}
+\DoxyCodeLine{  -\/20, -\/10, -\/10, -\/10, -\/10, -\/10, -\/10, -\/20}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceeval_a7e0e5d756c01173f24e4378e0d0b6ae0}\label{namespaceeval_a7e0e5d756c01173f24e4378e0d0b6ae0}} 
+\index{eval@{eval}!king\_table\_endgame@{king\_table\_endgame}}
+\index{king\_table\_endgame@{king\_table\_endgame}!eval@{eval}}
+\doxysubsubsection{\texorpdfstring{king\_table\_endgame}{king\_table\_endgame}}
+{\footnotesize\ttfamily const int eval\+::king\+\_\+table\+\_\+endgame\mbox{[}64\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{  -\/50, -\/40, -\/30, -\/20, -\/20, -\/30, -\/40, -\/50,}
+\DoxyCodeLine{  -\/30, -\/20, -\/10,   0,   0, -\/10, -\/20, -\/30,}
+\DoxyCodeLine{  -\/30, -\/10,  20,  30,  30,  20, -\/10, -\/30,}
+\DoxyCodeLine{  -\/30, -\/10,  30,  40,  40,  30, -\/10, -\/30,}
+\DoxyCodeLine{  -\/30, -\/10,  30,  40,  40,  30, -\/10, -\/30,}
+\DoxyCodeLine{  -\/30, -\/10,  20,  30,  30,  20, -\/10, -\/30,}
+\DoxyCodeLine{  -\/30, -\/30,   0,   0,   0,   0, -\/30, -\/30,}
+\DoxyCodeLine{  -\/50, -\/30, -\/30, -\/30, -\/30, -\/30, -\/30, -\/50}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceeval_aa7d1ec3d23293b4acbb0bbcc160b0a5b}\label{namespaceeval_aa7d1ec3d23293b4acbb0bbcc160b0a5b}} 
+\index{eval@{eval}!king\_table\_midgame@{king\_table\_midgame}}
+\index{king\_table\_midgame@{king\_table\_midgame}!eval@{eval}}
+\doxysubsubsection{\texorpdfstring{king\_table\_midgame}{king\_table\_midgame}}
+{\footnotesize\ttfamily const int eval\+::king\+\_\+table\+\_\+midgame\mbox{[}64\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{  -\/30, -\/40, -\/40, -\/50, -\/50, -\/40, -\/40, -\/30,}
+\DoxyCodeLine{  -\/30, -\/40, -\/40, -\/50, -\/50, -\/40, -\/40, -\/30,}
+\DoxyCodeLine{  -\/30, -\/40, -\/40, -\/50, -\/50, -\/40, -\/40, -\/30,}
+\DoxyCodeLine{  -\/30, -\/40, -\/40, -\/50, -\/50, -\/40, -\/40, -\/30,}
+\DoxyCodeLine{  -\/20, -\/30, -\/30, -\/40, -\/40, -\/30, -\/30, -\/20,}
+\DoxyCodeLine{  -\/10, -\/20, -\/20, -\/20, -\/20, -\/20, -\/20, -\/10,}
+\DoxyCodeLine{   20,  20,   0,   0,   0,   0,  20,  20,}
+\DoxyCodeLine{   20,  30,  10,   0,   0,  10,  30,  20}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceeval_a6c9b4a99b03243e9a3824048bf6b450e}\label{namespaceeval_a6c9b4a99b03243e9a3824048bf6b450e}} 
+\index{eval@{eval}!knight\_table\_endgame@{knight\_table\_endgame}}
+\index{knight\_table\_endgame@{knight\_table\_endgame}!eval@{eval}}
+\doxysubsubsection{\texorpdfstring{knight\_table\_endgame}{knight\_table\_endgame}}
+{\footnotesize\ttfamily const int eval\+::knight\+\_\+table\+\_\+endgame\mbox{[}64\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{  -\/50, -\/40, -\/30, -\/30, -\/30, -\/30, -\/40, -\/50,}
+\DoxyCodeLine{  -\/40, -\/20,   0,   0,   0,   0, -\/20, -\/40,}
+\DoxyCodeLine{  -\/30,   0,  10,  15,  15,  10,   0, -\/30,}
+\DoxyCodeLine{  -\/30,   5,  15,  20,  20,  15,   5, -\/30,}
+\DoxyCodeLine{  -\/30,   0,  15,  20,  20,  15,   0, -\/30,}
+\DoxyCodeLine{  -\/30,   5,  10,  15,  15,  10,   5, -\/30,}
+\DoxyCodeLine{  -\/40, -\/20,   0,   5,   5,   0, -\/20, -\/40,}
+\DoxyCodeLine{  -\/50, -\/40, -\/30, -\/30, -\/30, -\/30, -\/40, -\/50}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceeval_a4ee445d3d080ce9153aef223b9ff4155}\label{namespaceeval_a4ee445d3d080ce9153aef223b9ff4155}} 
+\index{eval@{eval}!knight\_table\_midgame@{knight\_table\_midgame}}
+\index{knight\_table\_midgame@{knight\_table\_midgame}!eval@{eval}}
+\doxysubsubsection{\texorpdfstring{knight\_table\_midgame}{knight\_table\_midgame}}
+{\footnotesize\ttfamily const int eval\+::knight\+\_\+table\+\_\+midgame\mbox{[}64\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{  -\/50, -\/40, -\/30, -\/30, -\/30, -\/30, -\/40, -\/50,}
+\DoxyCodeLine{  -\/40, -\/20,   0,   5,   5,   0, -\/20, -\/40,}
+\DoxyCodeLine{  -\/30,   5,  10,  15,  15,  10,   5, -\/30,}
+\DoxyCodeLine{  -\/30,   0,  15,  20,  20,  15,   0, -\/30,}
+\DoxyCodeLine{  -\/30,   5,  15,  20,  20,  15,   5, -\/30,}
+\DoxyCodeLine{  -\/30,   0,  10,  15,  15,  10,   0, -\/30,}
+\DoxyCodeLine{  -\/40, -\/20,   0,   0,   0,   0, -\/20, -\/40,}
+\DoxyCodeLine{  -\/50, -\/40, -\/30, -\/30, -\/30, -\/30, -\/40, -\/50}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceeval_ab91f58bad8ebb5dd8b74e0a46051b683}\label{namespaceeval_ab91f58bad8ebb5dd8b74e0a46051b683}} 
+\index{eval@{eval}!pawn\_table\_endgame@{pawn\_table\_endgame}}
+\index{pawn\_table\_endgame@{pawn\_table\_endgame}!eval@{eval}}
+\doxysubsubsection{\texorpdfstring{pawn\_table\_endgame}{pawn\_table\_endgame}}
+{\footnotesize\ttfamily const int eval\+::pawn\+\_\+table\+\_\+endgame\mbox{[}64\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    0,   0,   0,   0,   0,   0,   0,   0,}
+\DoxyCodeLine{   10,  10,  10,  10,  10,  10,  10,  10,}
+\DoxyCodeLine{    5,   5,  10,  15,  15,  10,   5,   5,}
+\DoxyCodeLine{    0,   0,   0,  20,  20,   0,   0,   0,}
+\DoxyCodeLine{    5,   5,  10,  25,  25,  10,   5,   5,}
+\DoxyCodeLine{   10,  10,  20,  30,  30,  20,  10,  10,}
+\DoxyCodeLine{   50,  50,  50,  50,  50,  50,  50,  50,}
+\DoxyCodeLine{    0,   0,   0,   0,   0,   0,   0,   0}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceeval_aafde74bff8ed53a9f9510438c1f16f4c}\label{namespaceeval_aafde74bff8ed53a9f9510438c1f16f4c}} 
+\index{eval@{eval}!pawn\_table\_midgame@{pawn\_table\_midgame}}
+\index{pawn\_table\_midgame@{pawn\_table\_midgame}!eval@{eval}}
+\doxysubsubsection{\texorpdfstring{pawn\_table\_midgame}{pawn\_table\_midgame}}
+{\footnotesize\ttfamily const int eval\+::pawn\+\_\+table\+\_\+midgame\mbox{[}64\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    0,   0,   0,   0,   0,   0,   0,   0,}
+\DoxyCodeLine{   50,  50,  50,  50,  50,  50,  50,  50,}
+\DoxyCodeLine{   10,  10,  20,  30,  30,  20,  10,  10,}
+\DoxyCodeLine{    5,   5,  10,  25,  25,  10,   5,   5,}
+\DoxyCodeLine{    0,   0,   0,  20,  20,   0,   0,   0,}
+\DoxyCodeLine{    5,  -\/5, -\/10,   0,   0, -\/10,  -\/5,   5,}
+\DoxyCodeLine{    5,  10,  10, -\/20, -\/20,  10,  10,   5,}
+\DoxyCodeLine{    0,   0,   0,   0,   0,   0,   0,   0}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceeval_aa17dae23ba63bca8f69cb30385de3a23}\label{namespaceeval_aa17dae23ba63bca8f69cb30385de3a23}} 
+\index{eval@{eval}!queen\_table\_endgame@{queen\_table\_endgame}}
+\index{queen\_table\_endgame@{queen\_table\_endgame}!eval@{eval}}
+\doxysubsubsection{\texorpdfstring{queen\_table\_endgame}{queen\_table\_endgame}}
+{\footnotesize\ttfamily const int eval\+::queen\+\_\+table\+\_\+endgame\mbox{[}64\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    -\/20, -\/10, -\/10,  -\/5,  -\/5, -\/10, -\/10, -\/20,}
+\DoxyCodeLine{    -\/10,   0,   0,   0,   0,   0,   0, -\/10,}
+\DoxyCodeLine{    -\/10,   0,   5,   5,   5,   5,   0, -\/10,}
+\DoxyCodeLine{     -\/5,   0,   5,   5,   5,   5,   0,  -\/5,}
+\DoxyCodeLine{      0,   0,   5,   5,   5,   5,   0,  -\/5,}
+\DoxyCodeLine{    -\/10,   5,   5,   5,   5,   5,   0, -\/10,}
+\DoxyCodeLine{    -\/10,   0,   5,   0,   0,   0,   0, -\/10,}
+\DoxyCodeLine{    -\/20, -\/10, -\/10,  -\/5,  -\/5, -\/10, -\/10, -\/20}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceeval_abe3d2598597a98d21641d2941b9afb0c}\label{namespaceeval_abe3d2598597a98d21641d2941b9afb0c}} 
+\index{eval@{eval}!queen\_table\_midgame@{queen\_table\_midgame}}
+\index{queen\_table\_midgame@{queen\_table\_midgame}!eval@{eval}}
+\doxysubsubsection{\texorpdfstring{queen\_table\_midgame}{queen\_table\_midgame}}
+{\footnotesize\ttfamily const int eval\+::queen\+\_\+table\+\_\+midgame\mbox{[}64\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{  -\/20, -\/10, -\/10,   5,  5, -\/10, -\/10, -\/20,}
+\DoxyCodeLine{  -\/10,   0,   0,   5,   5,   0,   0, -\/10,}
+\DoxyCodeLine{  -\/10,   0,   5,   5,   5,   5,   0, -\/10,}
+\DoxyCodeLine{   -\/5,   0,   5,   5,   5,   5,   0,  -\/5,}
+\DoxyCodeLine{    0,   0,   5,   5,   5,   5,   0,  -\/5,}
+\DoxyCodeLine{  -\/10,   5,   5,   5,   5,   5,   0, -\/10,}
+\DoxyCodeLine{  -\/10,   0,   5,   0,   0,   0,   0, -\/10,}
+\DoxyCodeLine{  -\/20, -\/10, -\/10,  -\/5,  -\/5, -\/10, -\/10, -\/20}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceeval_aa0f53a83f9f913702626c26d2ec1e70f}\label{namespaceeval_aa0f53a83f9f913702626c26d2ec1e70f}} 
+\index{eval@{eval}!rook\_table\_endgame@{rook\_table\_endgame}}
+\index{rook\_table\_endgame@{rook\_table\_endgame}!eval@{eval}}
+\doxysubsubsection{\texorpdfstring{rook\_table\_endgame}{rook\_table\_endgame}}
+{\footnotesize\ttfamily const int eval\+::rook\+\_\+table\+\_\+endgame\mbox{[}64\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    0,   0,   5,  10,  10,   5,   0,   0,}
+\DoxyCodeLine{  -\/5,   0,   0,   0,   0,   0,   0,  -\/5,}
+\DoxyCodeLine{  -\/5,   0,   0,   0,   0,   0,   0,  -\/5,}
+\DoxyCodeLine{  -\/5,   0,   0,   0,   0,   0,   0,  -\/5,}
+\DoxyCodeLine{  -\/5,   0,   0,   0,   0,   0,   0,  -\/5,}
+\DoxyCodeLine{  -\/5,   0,   0,   0,   0,   0,   0,  -\/5,}
+\DoxyCodeLine{   5,  10,  10,  10,  10,  10,  10,   5,}
+\DoxyCodeLine{    0,   0,   0,   0,   0,   0,   0,   0}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceeval_aad6a3d95707f3ce2a0c2347e3327b423}\label{namespaceeval_aad6a3d95707f3ce2a0c2347e3327b423}} 
+\index{eval@{eval}!rook\_table\_midgame@{rook\_table\_midgame}}
+\index{rook\_table\_midgame@{rook\_table\_midgame}!eval@{eval}}
+\doxysubsubsection{\texorpdfstring{rook\_table\_midgame}{rook\_table\_midgame}}
+{\footnotesize\ttfamily const int eval\+::rook\+\_\+table\+\_\+midgame\mbox{[}64\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    0,   0,   5,  10,  10,   5,   0,   0,}
+\DoxyCodeLine{  -\/5,   0,   0,   0,   0,   0,   0,  -\/5,}
+\DoxyCodeLine{  -\/5,   0,   0,   0,   0,   0,   0,  -\/5,}
+\DoxyCodeLine{  -\/5,   0,   0,   0,   0,   0,   0,  -\/5,}
+\DoxyCodeLine{  -\/5,   0,   0,   0,   0,   0,   0,  -\/5,}
+\DoxyCodeLine{  -\/5,   0,   0,   0,   0,   0,   0,  -\/5,}
+\DoxyCodeLine{   5,  10,  10,  10,  10,  10,  10,   5,}
+\DoxyCodeLine{    0,   0,   0,   0,   0,   0,   0,   0}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

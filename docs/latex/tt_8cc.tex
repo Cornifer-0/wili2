@@ -1,0 +1,29 @@
+\hypertarget{tt_8cc}{}\doxysection{src/tt.cc File Reference}
+\label{tt_8cc}\index{src/tt.cc@{src/tt.cc}}
+{\ttfamily \#include \char`\"{}../include/board.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/types.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/defs.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tt.\+hh\char`\"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+Include dependency graph for tt.\+cc\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tt_8cc__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceTT}{TT}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespaceTT_aa0618a633cd142102db265737fb2b45a}{TT\+::init}} (size\+\_\+t size\+MB=64)
+\begin{DoxyCompactList}\small\item\em It initializes the space for the Transposition Table, by default 64MB Must be called before using the Transposition Table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceTT_ab59e135e29596d92379fdda003d9de5a}{TT\+::store}} (uint64\+\_\+t key, int depth, int score, \mbox{\hyperlink{structtypes_1_1Move}{types\+::\+Move}} best\+Move, Node\+Type type)
+\begin{DoxyCompactList}\small\item\em This function stores a key (zobrist\+Hash) with it\textquotesingle{}s correspoding depth, score, best\+Move found and type. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceTT_aad93e3b20f702d9bcac5826125065aac}{TT\+::probe}} (uint64\+\_\+t key, int depth, int alpha, int beta, int \&out\+Score)
+\begin{DoxyCompactList}\small\item\em This function checks if there exists an entry to the tranposition table with the key key. Returns true if and only if that is true. If the function returns true, it also set the reference variable out\+Score to be the score found in the entry with the key key. \end{DoxyCompactList}\end{DoxyCompactItemize}

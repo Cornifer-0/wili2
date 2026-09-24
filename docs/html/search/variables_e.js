@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['rank_5f1_410',['RANK_1',['../defs_8hh.html#a240436c62cf2f24c3df321e6f0d2d94b',1,'defs.hh']]],
+  ['rank_5f2_411',['RANK_2',['../defs_8hh.html#a73ea43514a6b0d1f41603fe3f90852b2',1,'defs.hh']]],
+  ['rank_5f3_412',['RANK_3',['../defs_8hh.html#a04d7b8ba96f66901f504ea6e8e78f20e',1,'defs.hh']]],
+  ['rank_5f4_413',['RANK_4',['../defs_8hh.html#af922bc1a386055b45f950dad25c7c3bb',1,'defs.hh']]],
+  ['rank_5f5_414',['RANK_5',['../defs_8hh.html#a2eb9215879a45f988b64463840fb0ce8',1,'defs.hh']]],
+  ['rank_5f6_415',['RANK_6',['../defs_8hh.html#ace26acb9727d3dc70c487a10b84b5216',1,'defs.hh']]],
+  ['rank_5f7_416',['RANK_7',['../defs_8hh.html#abda3740e168e8caa1289a22d4065c3e6',1,'defs.hh']]],
+  ['rank_5f8_417',['RANK_8',['../defs_8hh.html#a183217ecca76a562b2a203b459d8aa34',1,'defs.hh']]],
+  ['rankmasks_418',['RankMasks',['../namespaceBitboards.html#a298a28e527bb2293b891ff3a9612a74b',1,'Bitboards']]],
+  ['rook_5ftable_5fendgame_419',['rook_table_endgame',['../namespaceeval.html#aa0f53a83f9f913702626c26d2ec1e70f',1,'eval']]],
+  ['rook_5ftable_5fmidgame_420',['rook_table_midgame',['../namespaceeval.html#aad6a3d95707f3ce2a0c2347e3327b423',1,'eval']]],
+  ['rookattacktable_421',['rookAttackTable',['../namespaceMagic.html#a64f2e3c8daa7859e66f2abc34d28b3c0',1,'Magic']]],
+  ['rookmagics_422',['rookMagics',['../namespaceMagic.html#a126bd05e3387e3d19e7e690e62613b23',1,'Magic']]],
+  ['rookmagics_423',['RookMagics',['../namespaceMagic.html#a972e73ad290c122fea6db20b42bf31e8',1,'Magic']]],
+  ['rookoccupancymasks_424',['rookOccupancyMasks',['../namespaceMagic.html#a6332ae6aec007f1a17124a36a16d34ed',1,'Magic']]],
+  ['rookshifts_425',['rookShifts',['../namespaceMagic.html#a1b9517d19fdacb5ad8ec6b7bdbc7ac3a',1,'Magic']]]
+];

@@ -1,0 +1,50 @@
+\hypertarget{zobrist_8cc}{}\doxysection{src/zobrist.cc File Reference}
+\label{zobrist_8cc}\index{src/zobrist.cc@{src/zobrist.cc}}
+{\ttfamily \#include \char`\"{}zobrist.\+hh\char`\"{}}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include \char`\"{}types.\+hh\char`\"{}}\newline
+Include dependency graph for zobrist.\+cc\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{zobrist_8cc__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{zobrist_8cc_a86da014448dd76d9b0dd1c0855d61441}{piece\+Keys}} \mbox{[}2\mbox{]}\mbox{[}6\mbox{]}\mbox{[}64\mbox{]}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{zobrist_8cc_a873cb92a1eb885a6e878b66f767e5223}{side\+Key}}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{zobrist_8cc_a451eec3c722d9214d374922c82abd046}{castling\+Keys}} \mbox{[}16\mbox{]}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{zobrist_8cc_ad0d414695e3eeeb74ec3a7aaf8179cc5}{en\+Passant\+Keys}} \mbox{[}8\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{zobrist_8cc_a451eec3c722d9214d374922c82abd046}\label{zobrist_8cc_a451eec3c722d9214d374922c82abd046}} 
+\index{zobrist.cc@{zobrist.cc}!castlingKeys@{castlingKeys}}
+\index{castlingKeys@{castlingKeys}!zobrist.cc@{zobrist.cc}}
+\doxysubsubsection{\texorpdfstring{castlingKeys}{castlingKeys}}
+{\footnotesize\ttfamily uint64\+\_\+t castling\+Keys\mbox{[}16\mbox{]}}
+
+\mbox{\Hypertarget{zobrist_8cc_ad0d414695e3eeeb74ec3a7aaf8179cc5}\label{zobrist_8cc_ad0d414695e3eeeb74ec3a7aaf8179cc5}} 
+\index{zobrist.cc@{zobrist.cc}!enPassantKeys@{enPassantKeys}}
+\index{enPassantKeys@{enPassantKeys}!zobrist.cc@{zobrist.cc}}
+\doxysubsubsection{\texorpdfstring{enPassantKeys}{enPassantKeys}}
+{\footnotesize\ttfamily uint64\+\_\+t en\+Passant\+Keys\mbox{[}8\mbox{]}}
+
+\mbox{\Hypertarget{zobrist_8cc_a86da014448dd76d9b0dd1c0855d61441}\label{zobrist_8cc_a86da014448dd76d9b0dd1c0855d61441}} 
+\index{zobrist.cc@{zobrist.cc}!pieceKeys@{pieceKeys}}
+\index{pieceKeys@{pieceKeys}!zobrist.cc@{zobrist.cc}}
+\doxysubsubsection{\texorpdfstring{pieceKeys}{pieceKeys}}
+{\footnotesize\ttfamily uint64\+\_\+t piece\+Keys\mbox{[}2\mbox{]}\mbox{[}6\mbox{]}\mbox{[}64\mbox{]}}
+
+\mbox{\Hypertarget{zobrist_8cc_a873cb92a1eb885a6e878b66f767e5223}\label{zobrist_8cc_a873cb92a1eb885a6e878b66f767e5223}} 
+\index{zobrist.cc@{zobrist.cc}!sideKey@{sideKey}}
+\index{sideKey@{sideKey}!zobrist.cc@{zobrist.cc}}
+\doxysubsubsection{\texorpdfstring{sideKey}{sideKey}}
+{\footnotesize\ttfamily uint64\+\_\+t side\+Key}
+

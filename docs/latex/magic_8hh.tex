@@ -1,0 +1,52 @@
+\hypertarget{magic_8hh}{}\doxysection{include/magic.hh File Reference}
+\label{magic_8hh}\index{include/magic.hh@{include/magic.hh}}
+{\ttfamily \#include \char`\"{}types.\+hh\char`\"{}}\newline
+Include dependency graph for magic.\+hh\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{magic_8hh__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{magic_8hh__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceMagic}{Magic}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespaceMagic_a54ce71e79b57188e21ed498173b44042}{Magic\+::init\+Magic\+Tables}} ()
+\begin{DoxyCompactList}\small\item\em Calculates all magic tables before move generation. This must be called at the beggining of the execution. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacetypes_aa25e4c6a12314411bb403adaa99eb3c8}{types\+::\+Bitboard}} \mbox{\hyperlink{namespaceMagic_a388f185aa384ce01c87716c90bbd95c0}{Magic\+::get\+Rook\+Attacks}} (int square, \mbox{\hyperlink{namespacetypes_aa25e4c6a12314411bb403adaa99eb3c8}{types\+::\+Bitboard}} occupancy)
+\begin{DoxyCompactList}\small\item\em Given a square and current occupancy returns the rook attacks. This doesn\textquotesingle{}t not take into account friendly Ocupancy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacetypes_aa25e4c6a12314411bb403adaa99eb3c8}{types\+::\+Bitboard}} \mbox{\hyperlink{namespaceMagic_ac13e225744a256eff7a8bc0dd7b4e74f}{Magic\+::get\+Bishop\+Attacks}} (int square, \mbox{\hyperlink{namespacetypes_aa25e4c6a12314411bb403adaa99eb3c8}{types\+::\+Bitboard}} occupancy)
+\begin{DoxyCompactList}\small\item\em Given a square and current occupancy returns the bishop attacks. This doesn\textquotesingle{}t not take into account friendly Ocupancy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr int \mbox{\hyperlink{namespaceMagic_ad71dbd4883b94951d01f35ab808574c7}{Magic\+::\+NUM\+\_\+\+SQUARES}} = 64
+\item 
+\mbox{\hyperlink{namespacetypes_aa25e4c6a12314411bb403adaa99eb3c8}{types\+::\+Bitboard}} \mbox{\hyperlink{namespaceMagic_a6332ae6aec007f1a17124a36a16d34ed}{Magic\+::rook\+Occupancy\+Masks}} \mbox{[}NUM\+\_\+\+SQUARES\mbox{]}
+\item 
+\mbox{\hyperlink{namespacetypes_aa25e4c6a12314411bb403adaa99eb3c8}{types\+::\+Bitboard}} \mbox{\hyperlink{namespaceMagic_a126bd05e3387e3d19e7e690e62613b23}{Magic\+::rook\+Magics}} \mbox{[}NUM\+\_\+\+SQUARES\mbox{]}
+\item 
+int \mbox{\hyperlink{namespaceMagic_a1b9517d19fdacb5ad8ec6b7bdbc7ac3a}{Magic\+::rook\+Shifts}} \mbox{[}NUM\+\_\+\+SQUARES\mbox{]}
+\item 
+\mbox{\hyperlink{namespacetypes_aa25e4c6a12314411bb403adaa99eb3c8}{types\+::\+Bitboard}} $\ast$ \mbox{\hyperlink{namespaceMagic_a64f2e3c8daa7859e66f2abc34d28b3c0}{Magic\+::rook\+Attack\+Table}} \mbox{[}NUM\+\_\+\+SQUARES\mbox{]}
+\item 
+\mbox{\hyperlink{namespacetypes_aa25e4c6a12314411bb403adaa99eb3c8}{types\+::\+Bitboard}} \mbox{\hyperlink{namespaceMagic_ad216fe5c2f449bc63e6a96c80a6de5a7}{Magic\+::bishop\+Occupancy\+Masks}} \mbox{[}NUM\+\_\+\+SQUARES\mbox{]}
+\item 
+\mbox{\hyperlink{namespacetypes_aa25e4c6a12314411bb403adaa99eb3c8}{types\+::\+Bitboard}} \mbox{\hyperlink{namespaceMagic_aeafb3acaf1b2be6c5868a24623a66ae3}{Magic\+::bishop\+Magics}} \mbox{[}NUM\+\_\+\+SQUARES\mbox{]}
+\item 
+int \mbox{\hyperlink{namespaceMagic_ae3fef51b38541a4c91cfd84097732823}{Magic\+::bishop\+Shifts}} \mbox{[}NUM\+\_\+\+SQUARES\mbox{]}
+\item 
+\mbox{\hyperlink{namespacetypes_aa25e4c6a12314411bb403adaa99eb3c8}{types\+::\+Bitboard}} $\ast$ \mbox{\hyperlink{namespaceMagic_afaf7303d77cc9230d8056504a539fed1}{Magic\+::bishop\+Attack\+Table}} \mbox{[}NUM\+\_\+\+SQUARES\mbox{]}
+\end{DoxyCompactItemize}

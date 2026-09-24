@@ -1,0 +1,258 @@
+\hypertarget{defs_8hh}{}\doxysection{include/defs.hh File Reference}
+\label{defs_8hh}\index{include/defs.hh@{include/defs.hh}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+Include dependency graph for defs.\+hh\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{defs_8hh__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{defs_8hh__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{defs_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} = uint64\+\_\+t
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{defs_8hh_a6b7d5b077cba509494f6b4493dfd36ee}{Castling\+Rights\+Enum}} \{ \mbox{\hyperlink{defs_8hh_a6b7d5b077cba509494f6b4493dfd36eea78f3f7dc0595ea314efd6222fb3a4625}{WHITE\+\_\+\+KINGSIDE}} = 1 $<$$<$ 0
+, \mbox{\hyperlink{defs_8hh_a6b7d5b077cba509494f6b4493dfd36eeadaf7709e0cdff9f9cceae1621e6ec55a}{WHITE\+\_\+\+QUEENSIDE}} = 1 $<$$<$ 1
+, \mbox{\hyperlink{defs_8hh_a6b7d5b077cba509494f6b4493dfd36eea507868ef194511c4ad4db11fa6fe11ec}{BLACK\+\_\+\+KINGSIDE}} = 1 $<$$<$ 2
+, \mbox{\hyperlink{defs_8hh_a6b7d5b077cba509494f6b4493dfd36eeac53c9b2244585c3f8138042e6dc0e289}{BLACK\+\_\+\+QUEENSIDE}} = 1 $<$$<$ 3
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{defs_8hh_a68e85ea481a8a584f615a8582d0d48c7}{pop\+\_\+lsb}} (\mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \&bb)
+\begin{DoxyCompactList}\small\item\em Returns the position of the least significant bit of bb. And turns it to 0. If bb == 0. Returns -\/1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \mbox{\hyperlink{defs_8hh_a003a09958c8984673c4ce5a4f039af80}{STARTING\+\_\+\+FEN}} = \char`\"{}rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq -\/ 0 1\char`\"{}
+\item 
+constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{defs_8hh_a9b0c686a523dfd72a05b39502c762dd2}{SQUARE\+\_\+\+BB}} \mbox{[}64\mbox{]}
+\item 
+constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{defs_8hh_a240436c62cf2f24c3df321e6f0d2d94b}{RANK\+\_\+1}} = 0x\+FFULL
+\item 
+constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{defs_8hh_a73ea43514a6b0d1f41603fe3f90852b2}{RANK\+\_\+2}} = \mbox{\hyperlink{defs_8hh_a240436c62cf2f24c3df321e6f0d2d94b}{RANK\+\_\+1}} $<$$<$ 8
+\item 
+constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{defs_8hh_a04d7b8ba96f66901f504ea6e8e78f20e}{RANK\+\_\+3}} = \mbox{\hyperlink{defs_8hh_a73ea43514a6b0d1f41603fe3f90852b2}{RANK\+\_\+2}} $<$$<$ 8
+\item 
+constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{defs_8hh_af922bc1a386055b45f950dad25c7c3bb}{RANK\+\_\+4}} = \mbox{\hyperlink{defs_8hh_a04d7b8ba96f66901f504ea6e8e78f20e}{RANK\+\_\+3}} $<$$<$ 8
+\item 
+constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{defs_8hh_a2eb9215879a45f988b64463840fb0ce8}{RANK\+\_\+5}} = \mbox{\hyperlink{defs_8hh_af922bc1a386055b45f950dad25c7c3bb}{RANK\+\_\+4}} $<$$<$ 8
+\item 
+constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{defs_8hh_ace26acb9727d3dc70c487a10b84b5216}{RANK\+\_\+6}} = \mbox{\hyperlink{defs_8hh_a2eb9215879a45f988b64463840fb0ce8}{RANK\+\_\+5}} $<$$<$ 8
+\item 
+constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{defs_8hh_abda3740e168e8caa1289a22d4065c3e6}{RANK\+\_\+7}} = \mbox{\hyperlink{defs_8hh_ace26acb9727d3dc70c487a10b84b5216}{RANK\+\_\+6}} $<$$<$ 8
+\item 
+constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{defs_8hh_a183217ecca76a562b2a203b459d8aa34}{RANK\+\_\+8}} = \mbox{\hyperlink{defs_8hh_abda3740e168e8caa1289a22d4065c3e6}{RANK\+\_\+7}} $<$$<$ 8
+\item 
+constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{defs_8hh_a475d0f7a52bd7769fb5702ba77c87575}{FILE\+\_\+A}} = 0x0101010101010101\+ULL
+\item 
+constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{defs_8hh_a3000185b754caade14097de8d5924944}{FILE\+\_\+B}} = \mbox{\hyperlink{defs_8hh_a475d0f7a52bd7769fb5702ba77c87575}{FILE\+\_\+A}} $<$$<$ 7
+\item 
+constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{defs_8hh_a5f49c586d820c50fa891cf476b841e22}{FILE\+\_\+C}} = \mbox{\hyperlink{defs_8hh_a3000185b754caade14097de8d5924944}{FILE\+\_\+B}} $<$$<$ 7
+\item 
+constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{defs_8hh_a9851aab0cd598c0b9164b13ecaea9232}{FILE\+\_\+D}} = \mbox{\hyperlink{defs_8hh_a5f49c586d820c50fa891cf476b841e22}{FILE\+\_\+C}} $<$$<$ 7
+\item 
+constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{defs_8hh_a84ad810c5ef9cf2f65cdb6f608f92c27}{FILE\+\_\+E}} = \mbox{\hyperlink{defs_8hh_a9851aab0cd598c0b9164b13ecaea9232}{FILE\+\_\+D}} $<$$<$ 7
+\item 
+constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{defs_8hh_aa7f1c95fb50ed373cfbf34ed429cfe9d}{FILE\+\_\+F}} = \mbox{\hyperlink{defs_8hh_a84ad810c5ef9cf2f65cdb6f608f92c27}{FILE\+\_\+E}} $<$$<$ 7
+\item 
+constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{defs_8hh_af1d1c589b9d87b29480dff893322afd5}{FILE\+\_\+G}} = \mbox{\hyperlink{defs_8hh_aa7f1c95fb50ed373cfbf34ed429cfe9d}{FILE\+\_\+F}} $<$$<$ 7
+\item 
+constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \mbox{\hyperlink{defs_8hh_a95cf441df6ec7b614043ae1b8e9e2877}{FILE\+\_\+H}} = \mbox{\hyperlink{defs_8hh_af1d1c589b9d87b29480dff893322afd5}{FILE\+\_\+G}} $<$$<$ 7
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{defs_8hh_ace8780b9a5011037ca5d302fbfa2961e}\label{defs_8hh_ace8780b9a5011037ca5d302fbfa2961e}} 
+\index{defs.hh@{defs.hh}!Bitboard@{Bitboard}}
+\index{Bitboard@{Bitboard}!defs.hh@{defs.hh}}
+\doxysubsubsection{\texorpdfstring{Bitboard}{Bitboard}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} =  uint64\+\_\+t}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{defs_8hh_a6b7d5b077cba509494f6b4493dfd36ee}\label{defs_8hh_a6b7d5b077cba509494f6b4493dfd36ee}} 
+\index{defs.hh@{defs.hh}!CastlingRightsEnum@{CastlingRightsEnum}}
+\index{CastlingRightsEnum@{CastlingRightsEnum}!defs.hh@{defs.hh}}
+\doxysubsubsection{\texorpdfstring{CastlingRightsEnum}{CastlingRightsEnum}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{defs_8hh_a6b7d5b077cba509494f6b4493dfd36ee}{Castling\+Rights\+Enum}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WHITE\_KINGSIDE@{WHITE\_KINGSIDE}!defs.hh@{defs.hh}}\index{defs.hh@{defs.hh}!WHITE\_KINGSIDE@{WHITE\_KINGSIDE}}}\mbox{\Hypertarget{defs_8hh_a6b7d5b077cba509494f6b4493dfd36eea78f3f7dc0595ea314efd6222fb3a4625}\label{defs_8hh_a6b7d5b077cba509494f6b4493dfd36eea78f3f7dc0595ea314efd6222fb3a4625}} 
+WHITE\+\_\+\+KINGSIDE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WHITE\_QUEENSIDE@{WHITE\_QUEENSIDE}!defs.hh@{defs.hh}}\index{defs.hh@{defs.hh}!WHITE\_QUEENSIDE@{WHITE\_QUEENSIDE}}}\mbox{\Hypertarget{defs_8hh_a6b7d5b077cba509494f6b4493dfd36eeadaf7709e0cdff9f9cceae1621e6ec55a}\label{defs_8hh_a6b7d5b077cba509494f6b4493dfd36eeadaf7709e0cdff9f9cceae1621e6ec55a}} 
+WHITE\+\_\+\+QUEENSIDE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLACK\_KINGSIDE@{BLACK\_KINGSIDE}!defs.hh@{defs.hh}}\index{defs.hh@{defs.hh}!BLACK\_KINGSIDE@{BLACK\_KINGSIDE}}}\mbox{\Hypertarget{defs_8hh_a6b7d5b077cba509494f6b4493dfd36eea507868ef194511c4ad4db11fa6fe11ec}\label{defs_8hh_a6b7d5b077cba509494f6b4493dfd36eea507868ef194511c4ad4db11fa6fe11ec}} 
+BLACK\+\_\+\+KINGSIDE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLACK\_QUEENSIDE@{BLACK\_QUEENSIDE}!defs.hh@{defs.hh}}\index{defs.hh@{defs.hh}!BLACK\_QUEENSIDE@{BLACK\_QUEENSIDE}}}\mbox{\Hypertarget{defs_8hh_a6b7d5b077cba509494f6b4493dfd36eeac53c9b2244585c3f8138042e6dc0e289}\label{defs_8hh_a6b7d5b077cba509494f6b4493dfd36eeac53c9b2244585c3f8138042e6dc0e289}} 
+BLACK\+\_\+\+QUEENSIDE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{defs_8hh_a68e85ea481a8a584f615a8582d0d48c7}\label{defs_8hh_a68e85ea481a8a584f615a8582d0d48c7}} 
+\index{defs.hh@{defs.hh}!pop\_lsb@{pop\_lsb}}
+\index{pop\_lsb@{pop\_lsb}!defs.hh@{defs.hh}}
+\doxysubsubsection{\texorpdfstring{pop\_lsb()}{pop\_lsb()}}
+{\footnotesize\ttfamily int pop\+\_\+lsb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} \&}]{bb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the position of the least significant bit of bb. And turns it to 0. If bb == 0. Returns -\/1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bb} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{defs_8hh_a475d0f7a52bd7769fb5702ba77c87575}\label{defs_8hh_a475d0f7a52bd7769fb5702ba77c87575}} 
+\index{defs.hh@{defs.hh}!FILE\_A@{FILE\_A}}
+\index{FILE\_A@{FILE\_A}!defs.hh@{defs.hh}}
+\doxysubsubsection{\texorpdfstring{FILE\_A}{FILE\_A}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} FILE\+\_\+A = 0x0101010101010101\+ULL\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{defs_8hh_a3000185b754caade14097de8d5924944}\label{defs_8hh_a3000185b754caade14097de8d5924944}} 
+\index{defs.hh@{defs.hh}!FILE\_B@{FILE\_B}}
+\index{FILE\_B@{FILE\_B}!defs.hh@{defs.hh}}
+\doxysubsubsection{\texorpdfstring{FILE\_B}{FILE\_B}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} FILE\+\_\+B = \mbox{\hyperlink{defs_8hh_a475d0f7a52bd7769fb5702ba77c87575}{FILE\+\_\+A}} $<$$<$ 7\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{defs_8hh_a5f49c586d820c50fa891cf476b841e22}\label{defs_8hh_a5f49c586d820c50fa891cf476b841e22}} 
+\index{defs.hh@{defs.hh}!FILE\_C@{FILE\_C}}
+\index{FILE\_C@{FILE\_C}!defs.hh@{defs.hh}}
+\doxysubsubsection{\texorpdfstring{FILE\_C}{FILE\_C}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} FILE\+\_\+C = \mbox{\hyperlink{defs_8hh_a3000185b754caade14097de8d5924944}{FILE\+\_\+B}} $<$$<$ 7\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{defs_8hh_a9851aab0cd598c0b9164b13ecaea9232}\label{defs_8hh_a9851aab0cd598c0b9164b13ecaea9232}} 
+\index{defs.hh@{defs.hh}!FILE\_D@{FILE\_D}}
+\index{FILE\_D@{FILE\_D}!defs.hh@{defs.hh}}
+\doxysubsubsection{\texorpdfstring{FILE\_D}{FILE\_D}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} FILE\+\_\+D = \mbox{\hyperlink{defs_8hh_a5f49c586d820c50fa891cf476b841e22}{FILE\+\_\+C}} $<$$<$ 7\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{defs_8hh_a84ad810c5ef9cf2f65cdb6f608f92c27}\label{defs_8hh_a84ad810c5ef9cf2f65cdb6f608f92c27}} 
+\index{defs.hh@{defs.hh}!FILE\_E@{FILE\_E}}
+\index{FILE\_E@{FILE\_E}!defs.hh@{defs.hh}}
+\doxysubsubsection{\texorpdfstring{FILE\_E}{FILE\_E}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} FILE\+\_\+E = \mbox{\hyperlink{defs_8hh_a9851aab0cd598c0b9164b13ecaea9232}{FILE\+\_\+D}} $<$$<$ 7\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{defs_8hh_aa7f1c95fb50ed373cfbf34ed429cfe9d}\label{defs_8hh_aa7f1c95fb50ed373cfbf34ed429cfe9d}} 
+\index{defs.hh@{defs.hh}!FILE\_F@{FILE\_F}}
+\index{FILE\_F@{FILE\_F}!defs.hh@{defs.hh}}
+\doxysubsubsection{\texorpdfstring{FILE\_F}{FILE\_F}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} FILE\+\_\+F = \mbox{\hyperlink{defs_8hh_a84ad810c5ef9cf2f65cdb6f608f92c27}{FILE\+\_\+E}} $<$$<$ 7\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{defs_8hh_af1d1c589b9d87b29480dff893322afd5}\label{defs_8hh_af1d1c589b9d87b29480dff893322afd5}} 
+\index{defs.hh@{defs.hh}!FILE\_G@{FILE\_G}}
+\index{FILE\_G@{FILE\_G}!defs.hh@{defs.hh}}
+\doxysubsubsection{\texorpdfstring{FILE\_G}{FILE\_G}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} FILE\+\_\+G = \mbox{\hyperlink{defs_8hh_aa7f1c95fb50ed373cfbf34ed429cfe9d}{FILE\+\_\+F}} $<$$<$ 7\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{defs_8hh_a95cf441df6ec7b614043ae1b8e9e2877}\label{defs_8hh_a95cf441df6ec7b614043ae1b8e9e2877}} 
+\index{defs.hh@{defs.hh}!FILE\_H@{FILE\_H}}
+\index{FILE\_H@{FILE\_H}!defs.hh@{defs.hh}}
+\doxysubsubsection{\texorpdfstring{FILE\_H}{FILE\_H}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} FILE\+\_\+H = \mbox{\hyperlink{defs_8hh_af1d1c589b9d87b29480dff893322afd5}{FILE\+\_\+G}} $<$$<$ 7\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{defs_8hh_a240436c62cf2f24c3df321e6f0d2d94b}\label{defs_8hh_a240436c62cf2f24c3df321e6f0d2d94b}} 
+\index{defs.hh@{defs.hh}!RANK\_1@{RANK\_1}}
+\index{RANK\_1@{RANK\_1}!defs.hh@{defs.hh}}
+\doxysubsubsection{\texorpdfstring{RANK\_1}{RANK\_1}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} RANK\+\_\+1 = 0x\+FFULL\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{defs_8hh_a73ea43514a6b0d1f41603fe3f90852b2}\label{defs_8hh_a73ea43514a6b0d1f41603fe3f90852b2}} 
+\index{defs.hh@{defs.hh}!RANK\_2@{RANK\_2}}
+\index{RANK\_2@{RANK\_2}!defs.hh@{defs.hh}}
+\doxysubsubsection{\texorpdfstring{RANK\_2}{RANK\_2}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} RANK\+\_\+2 = \mbox{\hyperlink{defs_8hh_a240436c62cf2f24c3df321e6f0d2d94b}{RANK\+\_\+1}} $<$$<$ 8\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{defs_8hh_a04d7b8ba96f66901f504ea6e8e78f20e}\label{defs_8hh_a04d7b8ba96f66901f504ea6e8e78f20e}} 
+\index{defs.hh@{defs.hh}!RANK\_3@{RANK\_3}}
+\index{RANK\_3@{RANK\_3}!defs.hh@{defs.hh}}
+\doxysubsubsection{\texorpdfstring{RANK\_3}{RANK\_3}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} RANK\+\_\+3 = \mbox{\hyperlink{defs_8hh_a73ea43514a6b0d1f41603fe3f90852b2}{RANK\+\_\+2}} $<$$<$ 8\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{defs_8hh_af922bc1a386055b45f950dad25c7c3bb}\label{defs_8hh_af922bc1a386055b45f950dad25c7c3bb}} 
+\index{defs.hh@{defs.hh}!RANK\_4@{RANK\_4}}
+\index{RANK\_4@{RANK\_4}!defs.hh@{defs.hh}}
+\doxysubsubsection{\texorpdfstring{RANK\_4}{RANK\_4}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} RANK\+\_\+4 = \mbox{\hyperlink{defs_8hh_a04d7b8ba96f66901f504ea6e8e78f20e}{RANK\+\_\+3}} $<$$<$ 8\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{defs_8hh_a2eb9215879a45f988b64463840fb0ce8}\label{defs_8hh_a2eb9215879a45f988b64463840fb0ce8}} 
+\index{defs.hh@{defs.hh}!RANK\_5@{RANK\_5}}
+\index{RANK\_5@{RANK\_5}!defs.hh@{defs.hh}}
+\doxysubsubsection{\texorpdfstring{RANK\_5}{RANK\_5}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} RANK\+\_\+5 = \mbox{\hyperlink{defs_8hh_af922bc1a386055b45f950dad25c7c3bb}{RANK\+\_\+4}} $<$$<$ 8\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{defs_8hh_ace26acb9727d3dc70c487a10b84b5216}\label{defs_8hh_ace26acb9727d3dc70c487a10b84b5216}} 
+\index{defs.hh@{defs.hh}!RANK\_6@{RANK\_6}}
+\index{RANK\_6@{RANK\_6}!defs.hh@{defs.hh}}
+\doxysubsubsection{\texorpdfstring{RANK\_6}{RANK\_6}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} RANK\+\_\+6 = \mbox{\hyperlink{defs_8hh_a2eb9215879a45f988b64463840fb0ce8}{RANK\+\_\+5}} $<$$<$ 8\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{defs_8hh_abda3740e168e8caa1289a22d4065c3e6}\label{defs_8hh_abda3740e168e8caa1289a22d4065c3e6}} 
+\index{defs.hh@{defs.hh}!RANK\_7@{RANK\_7}}
+\index{RANK\_7@{RANK\_7}!defs.hh@{defs.hh}}
+\doxysubsubsection{\texorpdfstring{RANK\_7}{RANK\_7}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} RANK\+\_\+7 = \mbox{\hyperlink{defs_8hh_ace26acb9727d3dc70c487a10b84b5216}{RANK\+\_\+6}} $<$$<$ 8\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{defs_8hh_a183217ecca76a562b2a203b459d8aa34}\label{defs_8hh_a183217ecca76a562b2a203b459d8aa34}} 
+\index{defs.hh@{defs.hh}!RANK\_8@{RANK\_8}}
+\index{RANK\_8@{RANK\_8}!defs.hh@{defs.hh}}
+\doxysubsubsection{\texorpdfstring{RANK\_8}{RANK\_8}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} RANK\+\_\+8 = \mbox{\hyperlink{defs_8hh_abda3740e168e8caa1289a22d4065c3e6}{RANK\+\_\+7}} $<$$<$ 8\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{defs_8hh_a9b0c686a523dfd72a05b39502c762dd2}\label{defs_8hh_a9b0c686a523dfd72a05b39502c762dd2}} 
+\index{defs.hh@{defs.hh}!SQUARE\_BB@{SQUARE\_BB}}
+\index{SQUARE\_BB@{SQUARE\_BB}!defs.hh@{defs.hh}}
+\doxysubsubsection{\texorpdfstring{SQUARE\_BB}{SQUARE\_BB}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{bitboard_8hh_ace8780b9a5011037ca5d302fbfa2961e}{Bitboard}} SQUARE\+\_\+\+BB\mbox{[}64\mbox{]}\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{  1ULL << 0,  1ULL << 1,  1ULL << 2,  1ULL << 3,  1ULL << 4,  1ULL << 5,  1ULL << 6,  1ULL << 7,}
+\DoxyCodeLine{  1ULL << 8,  1ULL << 9,  1ULL << 10, 1ULL << 11, 1ULL << 12, 1ULL << 13, 1ULL << 14, 1ULL << 15,}
+\DoxyCodeLine{  1ULL << 16, 1ULL << 17, 1ULL << 18, 1ULL << 19, 1ULL << 20, 1ULL << 21, 1ULL << 22, 1ULL << 23,}
+\DoxyCodeLine{  1ULL << 24, 1ULL << 25, 1ULL << 26, 1ULL << 27, 1ULL << 28, 1ULL << 29, 1ULL << 30, 1ULL << 31,}
+\DoxyCodeLine{  1ULL << 32, 1ULL << 33, 1ULL << 34, 1ULL << 35, 1ULL << 36, 1ULL << 37, 1ULL << 38, 1ULL << 39,}
+\DoxyCodeLine{  1ULL << 40, 1ULL << 41, 1ULL << 42, 1ULL << 43, 1ULL << 44, 1ULL << 45, 1ULL << 46, 1ULL << 47,}
+\DoxyCodeLine{  1ULL << 48, 1ULL << 49, 1ULL << 50, 1ULL << 51, 1ULL << 52, 1ULL << 53, 1ULL << 54, 1ULL << 55,}
+\DoxyCodeLine{  1ULL << 56, 1ULL << 57, 1ULL << 58, 1ULL << 59, 1ULL << 60, 1ULL << 61, 1ULL << 62, 1ULL << 63}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{defs_8hh_a003a09958c8984673c4ce5a4f039af80}\label{defs_8hh_a003a09958c8984673c4ce5a4f039af80}} 
+\index{defs.hh@{defs.hh}!STARTING\_FEN@{STARTING\_FEN}}
+\index{STARTING\_FEN@{STARTING\_FEN}!defs.hh@{defs.hh}}
+\doxysubsubsection{\texorpdfstring{STARTING\_FEN}{STARTING\_FEN}}
+{\footnotesize\ttfamily const std\+::string STARTING\+\_\+\+FEN = \char`\"{}rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq -\/ 0 1\char`\"{}}
+

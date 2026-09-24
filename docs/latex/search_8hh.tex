@@ -1,0 +1,130 @@
+\hypertarget{search_8hh}{}\doxysection{include/search.hh File Reference}
+\label{search_8hh}\index{include/search.hh@{include/search.hh}}
+{\ttfamily \#include \char`\"{}board.\+hh\char`\"{}}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+Include dependency graph for search.\+hh\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{search_8hh__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{search_8hh__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{search_8hh_a75d4b864523ac1ec6e5b1843663661e0}{minimax}} (\mbox{\hyperlink{classBoard}{Board}} \&board, int depth, int alpha, int beta, bool maximizing\+Player)
+\begin{DoxyCompactList}\small\item\em Using the negamax algorithm (a version of the minimax algorithm). Calculates moves to a certain depth. It computes the static evaluation at the leafs of the tree, and returns the most beneficial move for the side\+To\+Move. It uses alpha-\/beta pruning to prune unnecessary branches. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structtypes_1_1searchResult}{types\+::search\+Result}} \mbox{\hyperlink{search_8hh_ad30913d07f49decd9931f69a6267754c}{find\+Best\+Move}} (\mbox{\hyperlink{classBoard}{Board}} \&board, int depth)
+\begin{DoxyCompactList}\small\item\em Finds the \char`\"{}best move\char`\"{} in the position calculating to a ceratin depth using hte negamax funciton. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structtypes_1_1searchResult}{types\+::search\+Result}} \mbox{\hyperlink{search_8hh_a62eaea2aa7aec6ac5f51f5db95431741}{find\+Best\+Move\+Timed}} (\mbox{\hyperlink{classBoard}{Board}} \&board, int time\+Limit\+Ms)
+\item 
+int \mbox{\hyperlink{search_8hh_af830d332e9457486b07b2ef4b85fcdd9}{score\+Move\+By\+Flag}} (\mbox{\hyperlink{namespacetypes_affa50687605a4783f7bf1ad33239791c}{types\+::\+Move\+Flag}} flag)
+\begin{DoxyCompactList}\small\item\em It gives a score to each Move\+Flag, useful when sorting moves by probability of them, being good moves. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{search_8hh_a76f3cc3e12cf6db714aa25f81da1aff2}{quiescence}} (\mbox{\hyperlink{classBoard}{Board}} \&board, int alpha, int beta, bool maximizing\+Player)
+\begin{DoxyCompactList}\small\item\em Construct a new quiescence. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{search_8hh_a5f89673399853d01b3034906cb6fac2f}{print\+Timer\+Bar}} (int elapsed\+Ms, int total\+Ms, int bar\+Width)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{search_8hh_ad30913d07f49decd9931f69a6267754c}\label{search_8hh_ad30913d07f49decd9931f69a6267754c}} 
+\index{search.hh@{search.hh}!findBestMove@{findBestMove}}
+\index{findBestMove@{findBestMove}!search.hh@{search.hh}}
+\doxysubsubsection{\texorpdfstring{findBestMove()}{findBestMove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structtypes_1_1searchResult}{types\+::search\+Result}} find\+Best\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBoard}{Board}} \&}]{board,  }\item[{int}]{depth }\end{DoxyParamCaption})}
+
+
+
+Finds the \char`\"{}best move\char`\"{} in the position calculating to a ceratin depth using hte negamax funciton. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & \\
+\hline
+{\em depth} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structtypes_1_1searchResult}{types\+::search\+Result}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{search_8hh_a62eaea2aa7aec6ac5f51f5db95431741}\label{search_8hh_a62eaea2aa7aec6ac5f51f5db95431741}} 
+\index{search.hh@{search.hh}!findBestMoveTimed@{findBestMoveTimed}}
+\index{findBestMoveTimed@{findBestMoveTimed}!search.hh@{search.hh}}
+\doxysubsubsection{\texorpdfstring{findBestMoveTimed()}{findBestMoveTimed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structtypes_1_1searchResult}{types\+::search\+Result}} find\+Best\+Move\+Timed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBoard}{Board}} \&}]{board,  }\item[{int}]{time\+Limit\+Ms }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{search_8hh_a75d4b864523ac1ec6e5b1843663661e0}\label{search_8hh_a75d4b864523ac1ec6e5b1843663661e0}} 
+\index{search.hh@{search.hh}!minimax@{minimax}}
+\index{minimax@{minimax}!search.hh@{search.hh}}
+\doxysubsubsection{\texorpdfstring{minimax()}{minimax()}}
+{\footnotesize\ttfamily int minimax (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBoard}{Board}} \&}]{board,  }\item[{int}]{depth,  }\item[{int}]{alpha,  }\item[{int}]{beta,  }\item[{bool}]{maximizing\+Player }\end{DoxyParamCaption})}
+
+
+
+Using the negamax algorithm (a version of the minimax algorithm). Calculates moves to a certain depth. It computes the static evaluation at the leafs of the tree, and returns the most beneficial move for the side\+To\+Move. It uses alpha-\/beta pruning to prune unnecessary branches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & \\
+\hline
+{\em depth} & \\
+\hline
+{\em alpha} & \\
+\hline
+{\em beta} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{search_8hh_a5f89673399853d01b3034906cb6fac2f}\label{search_8hh_a5f89673399853d01b3034906cb6fac2f}} 
+\index{search.hh@{search.hh}!printTimerBar@{printTimerBar}}
+\index{printTimerBar@{printTimerBar}!search.hh@{search.hh}}
+\doxysubsubsection{\texorpdfstring{printTimerBar()}{printTimerBar()}}
+{\footnotesize\ttfamily void print\+Timer\+Bar (\begin{DoxyParamCaption}\item[{int}]{elapsed\+Ms,  }\item[{int}]{total\+Ms,  }\item[{int}]{bar\+Width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{search_8hh_a76f3cc3e12cf6db714aa25f81da1aff2}\label{search_8hh_a76f3cc3e12cf6db714aa25f81da1aff2}} 
+\index{search.hh@{search.hh}!quiescence@{quiescence}}
+\index{quiescence@{quiescence}!search.hh@{search.hh}}
+\doxysubsubsection{\texorpdfstring{quiescence()}{quiescence()}}
+{\footnotesize\ttfamily int quiescence (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBoard}{Board}} \&}]{board,  }\item[{int}]{alpha,  }\item[{int}]{beta,  }\item[{bool}]{maximizing\+Player }\end{DoxyParamCaption})}
+
+
+
+Construct a new quiescence. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & \\
+\hline
+{\em alpha} & \\
+\hline
+{\em beta} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{search_8hh_af830d332e9457486b07b2ef4b85fcdd9}\label{search_8hh_af830d332e9457486b07b2ef4b85fcdd9}} 
+\index{search.hh@{search.hh}!scoreMoveByFlag@{scoreMoveByFlag}}
+\index{scoreMoveByFlag@{scoreMoveByFlag}!search.hh@{search.hh}}
+\doxysubsubsection{\texorpdfstring{scoreMoveByFlag()}{scoreMoveByFlag()}}
+{\footnotesize\ttfamily int score\+Move\+By\+Flag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacetypes_affa50687605a4783f7bf1ad33239791c}{types\+::\+Move\+Flag}}}]{flag }\end{DoxyParamCaption})}
+
+
+
+It gives a score to each Move\+Flag, useful when sorting moves by probability of them, being good moves. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}

@@ -1,0 +1,10 @@
+<map id="include/bitboard.hh" name="include/bitboard.hh">
+<area shape="rect" id="node1" title=" " alt="" coords="452,5,599,32"/>
+<area shape="rect" id="node2" href="$bitboard_8cc.html" title=" " alt="" coords="5,80,123,107"/>
+<area shape="rect" id="node3" href="$board_8cc.html" title=" " alt="" coords="146,80,246,107"/>
+<area shape="rect" id="node4" href="$boardManipulation_8cc.html" title=" " alt="" coords="270,80,455,107"/>
+<area shape="rect" id="node5" href="$eval_8cc.html" title=" " alt="" coords="480,80,571,107"/>
+<area shape="rect" id="node6" href="$magic_8cc.html" title=" " alt="" coords="595,80,698,107"/>
+<area shape="rect" id="node7" href="$main_8cc.html" title=" " alt="" coords="723,80,819,107"/>
+<area shape="rect" id="node8" href="$movegen_8cc.html" title=" " alt="" coords="843,80,967,107"/>
+</map>
