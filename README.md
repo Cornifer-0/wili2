@@ -2,8 +2,7 @@
 
 A chess engine written from scratch in C++, with a playable terminal interface, magic-bitboard move generation, and an opening book. No external chess libraries or AI-generated code — built entirely from memory during a week without internet access.
 
-<!-- Add a screenshot or GIF of the terminal board here once ready, e.g.: -->
-<!-- ![wili2 gameplay](docs/demo.gif) -->
+<!-- screenshot -->
 
 ## Features
 
@@ -72,15 +71,14 @@ Each core system lives in its own module, both in `include/` and `src/`:
 
 ## Documentation
 
-Full API documentation is generated with [Doxygen](https://www.doxygen.nl/), covering every function in the codebase.
+Full API documentation is generated with [Doxygen](https://www.doxygen.nl/), covering every function in the codebase. ( /docs/html/index.html )
 
-<!-- Once GitHub Pages is enabled (Settings > Pages > Deploy from branch > /docs):
-**[View the full documentation →](https://yourusername.github.io/wili2/)** -->
+**[View the full documentation →](https://Cornifer-0.github.io/wili2/)**
 
 To regenerate it locally:
 
 ```bash
-doxygen docs/doxygen_config
+doxygen doxygen_config
 ```
 
 A LaTeX reference manual is also available in `docs/latex/` (build with `make` inside that folder to produce a PDF).
@@ -91,5 +89,4 @@ This engine was built independently over about a week, without internet access, 
 
 ## License
 
-<!-- Pick one, e.g. MIT: -->
-<!-- This project is licensed under the MIT License — see [LICENSE](LICENSE) for details. -->
+This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
